@@ -1,0 +1,317 @@
+import { Navigation } from "@/components/navigation";
+import { ClassDetail } from "@/components/class-detail";
+import { Footer } from "@/components/footer";
+import { notFound } from "next/navigation";
+
+const classesData = {
+  mma: {
+    id: "mma",
+    name: "MIXED MARTIAL ARTS",
+    shortDescription:
+      "Complete fighting system combining striking, grappling, and ground fighting",
+    fullDescription:
+      "Mixed Martial Arts (MMA) is the ultimate combat sport that combines techniques from various martial arts disciplines. Our comprehensive MMA program teaches you striking from boxing and kickboxing, grappling from wrestling, and ground fighting from Brazilian Jiu-Jitsu. You'll develop into a complete fighter capable of handling any combat situation, whether standing or on the ground.",
+    image:
+      "https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+    level: "All Levels",
+    duration: "90 min",
+    intensity: "High",
+    maxStudents: 20,
+    benefits: [
+      "Complete self-defense skills",
+      "Improved cardiovascular fitness",
+      "Enhanced mental toughness",
+      "Weight loss and muscle building",
+      "Stress relief and confidence",
+    ],
+    techniques: [
+      "Boxing combinations",
+      "Kickboxing techniques",
+      "Wrestling takedowns",
+      "BJJ submissions",
+      "Ground and pound",
+      "Cage work",
+    ],
+    equipment: [
+      "MMA gloves",
+      "Mouth guard",
+      "Shin guards",
+      "Groin protection",
+      "Rash guard",
+    ],
+    schedule: [
+      {
+        day: "Monday",
+        time: "6:00 PM - 7:30 PM",
+        instructor: "Sensei Rajesh Kumar",
+      },
+      {
+        day: "Wednesday",
+        time: "7:00 PM - 8:30 PM",
+        instructor: "Sensei Rajesh Kumar",
+      },
+      {
+        day: "Friday",
+        time: "6:00 PM - 7:30 PM",
+        instructor: "Coach Mike Thompson",
+      },
+      {
+        day: "Saturday",
+        time: "10:00 AM - 11:30 AM",
+        instructor: "Sensei Rajesh Kumar",
+      },
+    ],
+    price: { monthly: 15000, dropIn: 2000 },
+    instructor: "ANTHONY JAMES",
+    tagline: "ULTIMATE COMBAT DISCIPLINE",
+  },
+  "muay-thai": {
+    id: "muay-thai",
+    name: "MUAY THAI BOXING",
+    shortDescription:
+      "The art of eight limbs using fists, elbows, knees, and shins",
+    fullDescription:
+      "Muay Thai, known as 'The Art of Eight Limbs,' is Thailand's national sport and one of the most effective striking arts in the world. Our Muay Thai program teaches you to use your fists, elbows, knees, and shins as weapons, while developing incredible conditioning and mental toughness. The training includes traditional techniques, clinch work, and the cultural aspects of this ancient martial art.",
+    image:
+      "https://images.unsplash.com/photo-1555597673-b21d5c935865?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+    level: "All Levels",
+    duration: "75 min",
+    intensity: "High",
+    maxStudents: 25,
+    benefits: [
+      "Exceptional conditioning",
+      "Mental toughness",
+      "Cultural appreciation",
+      "Self-defense skills",
+      "Discipline and respect",
+    ],
+    techniques: [
+      "Punching combinations",
+      "Elbow strikes",
+      "Knee techniques",
+      "Shin kicks",
+      "Clinch work",
+      "Traditional Wai Kru",
+    ],
+    equipment: [
+      "Boxing gloves",
+      "Shin guards",
+      "Elbow pads",
+      "Mouth guard",
+      "Thai shorts",
+    ],
+    schedule: [
+      {
+        day: "Monday",
+        time: "8:00 PM - 9:15 PM",
+        instructor: "Kru Somchai Jaidee",
+      },
+      {
+        day: "Wednesday",
+        time: "8:00 PM - 9:15 PM",
+        instructor: "Kru Somchai Jaidee",
+      },
+      {
+        day: "Friday",
+        time: "8:00 PM - 9:15 PM",
+        instructor: "Coach David Kim",
+      },
+      {
+        day: "Sunday",
+        time: "2:00 PM - 3:15 PM",
+        instructor: "Kru Somchai Jaidee",
+      },
+    ],
+    price: { monthly: 13500, dropIn: 1900 },
+    instructor: "BUAKAW W. ANTHONY B.",
+    tagline: "THE ART OF EIGHT LIMBS",
+  },
+  bjj: {
+    id: "bjj",
+    name: "BRAZILIAN JIU-JITSU",
+    shortDescription:
+      "Ground fighting art focusing on leverage, technique, and submission holds",
+    fullDescription:
+      "Brazilian Jiu-Jitsu (BJJ) is a martial art that focuses on ground fighting and submission grappling. Known as 'human chess,' BJJ teaches you to use leverage, timing, and technique to overcome larger, stronger opponents. Our BJJ program emphasizes both self-defense applications and sport competition, helping you develop problem-solving skills that extend far beyond the mat.",
+    image: "/classes/jiu-jitsu.jpg",
+    level: "All Levels",
+    duration: "75 min",
+    intensity: "Medium-High",
+    maxStudents: 20,
+    benefits: [
+      "Problem-solving skills",
+      "Flexibility and mobility",
+      "Mental resilience",
+      "Self-defense confidence",
+      "Stress management",
+    ],
+    techniques: [
+      "Guard positions",
+      "Sweeps and reversals",
+      "Submission holds",
+      "Escapes and defenses",
+      "Takedowns",
+      "Positional control",
+    ],
+    equipment: [
+      "BJJ gi or no-gi attire",
+      "Mouth guard",
+      "Groin protection",
+      "Knee pads (optional)",
+    ],
+    schedule: [
+      {
+        day: "Monday",
+        time: "7:00 PM - 8:15 PM",
+        instructor: "Coach Priya Silva",
+      },
+      {
+        day: "Wednesday",
+        time: "7:00 PM - 8:15 PM",
+        instructor: "Coach Priya Silva",
+      },
+      {
+        day: "Friday",
+        time: "7:00 PM - 8:15 PM",
+        instructor: "Professor Carlos Santos",
+      },
+      {
+        day: "Sunday",
+        time: "10:00 AM - 11:15 AM",
+        instructor: "Coach Priya Silva",
+      },
+    ],
+    price: { monthly: 13000, dropIn: 1900 },
+    instructor: "FABRICIO DA SILVA",
+    tagline: "MOVE LIKE A SNAKE, STING LIKE A BEE!",
+  },
+  "kung-fu": {
+    id: "kung-fu",
+    name: "KYOKUSHIN KARATE",
+    shortDescription:
+      "Ancient Chinese martial art emphasizing fluid movements and deadly precision",
+    fullDescription:
+      "KYOKUSHIN KARATE is one of the most sophisticated and deadly martial arts from China. This ancient system mimics the movements of the praying mantis, combining lightning-fast strikes with intricate trapping techniques. Our program teaches traditional forms, weapons training, and practical self-defense applications while developing incredible flexibility, balance, and mental focus.",
+    image: "/classes/karate.jpg",
+    level: "All Levels",
+    duration: "60 min",
+    intensity: "Medium",
+    maxStudents: 18,
+    benefits: [
+      "Improved flexibility and balance",
+      "Mental focus and discipline",
+      "Traditional martial arts knowledge",
+      "Stress relief through meditation",
+      "Cultural appreciation",
+    ],
+    techniques: [
+      "Mantis claw strikes",
+      "Trapping techniques",
+      "Traditional forms",
+      "Weapons training",
+      "Meditation practices",
+      "Self-defense applications",
+    ],
+    equipment: [
+      "Comfortable training clothes",
+      "Kung Fu shoes",
+      "Traditional weapons (provided)",
+    ],
+    schedule: [
+      {
+        day: "Tuesday",
+        time: "6:30 PM - 7:30 PM",
+        instructor: "Master Li Wei",
+      },
+      {
+        day: "Thursday",
+        time: "6:30 PM - 7:30 PM",
+        instructor: "Master Li Wei",
+      },
+      {
+        day: "Saturday",
+        time: "2:00 PM - 3:00 PM",
+        instructor: "Sifu Chen Ming",
+      },
+    ],
+    price: { monthly: 11500, dropIn: 1700 },
+    instructor: "JET LEE, BRUCE LEE",
+    tagline: "ANCIENT WISDOM, DEADLY PRECISION",
+  },
+  kickboxing: {
+    id: "kickboxing",
+    name: "KICK BOXING",
+    shortDescription:
+      "High-intensity striking art combining punches, kicks, and cardio conditioning",
+    fullDescription:
+      "Kickboxing combines the punching techniques of boxing with the kicking techniques of karate, creating a dynamic and exciting martial art. Our kickboxing classes focus on developing powerful strikes, improving flexibility, and building incredible cardiovascular endurance. It's an excellent choice for those looking to learn effective striking while getting an amazing workout.",
+    image: "/classes/kickboxing.jpg",
+    level: "All Levels",
+    duration: "60 min",
+    intensity: "High",
+    maxStudents: 30,
+    benefits: [
+      "Full-body workout",
+      "Improved flexibility",
+      "Cardiovascular endurance",
+      "Coordination and balance",
+      "Confidence building",
+    ],
+    techniques: [
+      "Boxing combinations",
+      "Roundhouse kicks",
+      "Front kicks",
+      "Knee strikes",
+      "Defensive movements",
+      "Pad work drills",
+    ],
+    equipment: [
+      "Boxing gloves",
+      "Shin guards",
+      "Mouth guard",
+      "Hand wraps",
+      "Comfortable workout attire",
+    ],
+    schedule: [
+      {
+        day: "Tuesday",
+        time: "7:00 PM - 8:00 PM",
+        instructor: "Coach Lisa Martinez",
+      },
+      {
+        day: "Thursday",
+        time: "7:00 PM - 8:00 PM",
+        instructor: "Coach Lisa Martinez",
+      },
+      {
+        day: "Saturday",
+        time: "11:00 AM - 12:00 PM",
+        instructor: "Sensei Rajesh Kumar",
+      },
+      {
+        day: "Sunday",
+        time: "5:00 PM - 6:00 PM",
+        instructor: "Coach Lisa Martinez",
+      },
+    ],
+    price: { monthly: 11000, dropIn: 1600 },
+    instructor: "LAURA JAMES",
+    tagline: "POWER, PRECISION, PASSION",
+  },
+};
+
+export default function ClassPage({ params }: { params: { slug: string } }) {
+  const classData = classesData[params.slug as keyof typeof classesData];
+
+  if (!classData) {
+    notFound();
+  }
+
+  return (
+    <main className="min-h-screen bg-background">
+      <Navigation />
+      <ClassDetail classData={classData} />
+      <Footer />
+    </main>
+  );
+}
