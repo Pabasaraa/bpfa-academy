@@ -124,7 +124,7 @@ export default function JoinPage() {
               <h2 className="text-4xl md:text-5xl font-black text-white mb-8 tracking-wider">
                 WHY CHOOSE
                 <br />
-                BLACK PANTHER?
+                BPFA?
               </h2>
               <p className="text-gray-400 text-lg mb-8 leading-relaxed">
                 We're not just a martial arts school – we're a community

@@ -14,9 +14,9 @@ const workSans = Work_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Black Panther Fighting Academy | Martial Arts Training in Sri Lanka",
+  title: "BPFA | Martial Arts Training in Sri Lanka",
   description:
-    "Unleash the Fighter in You at Black Panther Fighting Academy. Premier martial arts training including MMA, Boxing, Jiu-Jitsu, and Kickboxing in Sri Lanka.",
+    "Unleash the Fighter in You at BPFA. Premier martial arts training including MMA, Boxing, Jiu-Jitsu, and Kickboxing in Sri Lanka.",
   generator: "v0.app",
 }
 

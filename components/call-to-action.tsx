@@ -25,7 +25,7 @@ export function CallToAction() {
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
             Take the first step towards transforming your body, mind, and
             spirit. Join hundreds of warriors who have already begun their
-            journey at Black Panther Fighting Academy.
+            journey at BPFA.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">

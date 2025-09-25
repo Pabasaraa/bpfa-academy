@@ -21,18 +21,6 @@
       "Muay Thai Coach License C (World All Fight System Organization - AFSO)"
     ],
     "philosophy": "Boxing is not just about throwing punches - it's about building character, one round at a time.",
-    "schedule": [
-      {
-        "day": "Tuesday",
-        "classes": ["Boxing Fundamentals", "Heavy Bag Training"]
-      },
-      {
-        "day": "Thursday",
-        "classes": ["Advanced Boxing", "Sparring Sessions"]
-      },
-      { "day": "Saturday", "classes": ["Boxing Conditioning", "Pad Work"] },
-      { "day": "Sunday", "classes": ["Competition Prep", "Private Training"] }
-    ],
     "styles": [
       "Shotokan karate",
       "JKD (Jeet Kune Do)",
@@ -64,18 +52,6 @@
       "Sports Psychology Diploma"
     ],
     "philosophy": "Every warrior must forge their spirit in the fire of discipline and emerge stronger than steel.",
-    "schedule": [
-      {
-        "day": "Monday",
-        "classes": ["MMA Fundamentals", "Advanced Kickboxing"]
-      },
-      {
-        "day": "Wednesday",
-        "classes": ["MMA Competition", "Kickboxing Sparring"]
-      },
-      { "day": "Friday", "classes": ["MMA Fundamentals", "Private Sessions"] },
-      { "day": "Saturday", "classes": ["Open Training", "Competition Prep"] }
-    ],
     "styles": ["MMA", "MOI TATI", "KICKBOXING"]
   },
   {
@@ -97,15 +73,6 @@
       "Youth Martial Arts Specialist"
     ],
     "philosophy": "Technique conquers strength, timing beats speed, and leverage defeats size.",
-    "schedule": [
-      { "day": "Monday", "classes": ["BJJ Fundamentals", "Women's BJJ"] },
-      {
-        "day": "Wednesday",
-        "classes": ["Advanced BJJ", "Competition Training"]
-      },
-      { "day": "Friday", "classes": ["BJJ Fundamentals", "No-Gi Grappling"] },
-      { "day": "Sunday", "classes": ["Open Mat", "Private Lessons"] }
-    ],
     "styles": ["MMA", "MOI TATI", "KICKBOXING"]
   },
   {
@@ -127,15 +94,6 @@
       "Youth Martial Arts Specialist"
     ],
     "philosophy": "Technique conquers strength, timing beats speed, and leverage defeats size.",
-    "schedule": [
-      { "day": "Monday", "classes": ["BJJ Fundamentals", "Women's BJJ"] },
-      {
-        "day": "Wednesday",
-        "classes": ["Advanced BJJ", "Competition Training"]
-      },
-      { "day": "Friday", "classes": ["BJJ Fundamentals", "No-Gi Grappling"] },
-      { "day": "Sunday", "classes": ["Open Mat", "Private Lessons"] }
-    ],
     "styles": ["MMA", "MOI TATI", "KICKBOXING"]
   }
 ]

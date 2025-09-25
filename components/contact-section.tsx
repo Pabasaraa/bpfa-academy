@@ -79,7 +79,7 @@ export function ContactSection() {
                 Ready to Train?
               </h3>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                Join the Black Panther family and unleash your inner warrior.
+                Join the BPFA family and unleash your inner warrior.
                 Contact us today to schedule your first training session.
               </p>
               <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300">

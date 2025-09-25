@@ -16,10 +16,6 @@ interface TrainerData {
   bio: string;
   certifications: string[];
   philosophy: string;
-  schedule: {
-    day: string;
-    classes: string[];
-  }[];
   styles: string[];
 }
 

@@ -11,7 +11,7 @@ export default function PricingPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <div className="relative h-[45vh] bg-gradient-to-br from-black/90 to-black/80 overflow-hidden">
+      <div className="relative h-[55vh] bg-gradient-to-br from-black/90 to-black/80 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25"
           style={{
@@ -19,7 +19,7 @@ export default function PricingPage() {
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/40" />
-        <div className="relative z-10 flex items-center justify-center h-full">
+        <div className="relative z-10 flex items-center justify-center h-full animate-fade-in-up">
           <div className="text-center max-w-4xl px-4">
             <div className="mb-6">
               <span className="text-red-400 text-sm font-light tracking-[0.4em] uppercase">
@@ -144,11 +144,13 @@ export default function PricingPage() {
                   <div className="mb-8">
                     {pkg.originalMonthlyPrice && (
                       <p className="text-gray-500 text-sm line-through">
-                        Was LKR {pkg.originalMonthlyPrice.toLocaleString()}/month
+                        Was LKR {pkg.originalMonthlyPrice.toLocaleString()}
+                        /month
                       </p>
                     )}
                     <p className="text-gray-400 font-semibold">
-                      Now LKR {pkg.monthlyPrice.toLocaleString()}/month equivalent
+                      Now LKR {pkg.monthlyPrice.toLocaleString()}/month
+                      equivalent
                     </p>
                   </div>
 
@@ -174,9 +176,8 @@ export default function PricingPage() {
             READY TO BEGIN?
           </h2>
           <p className="text-xl text-red-100 mb-8 leading-relaxed">
-            Join the Black Panther family today and start your martial arts
-            journey. Our expert instructors are ready to guide you every step of
-            the way.
+            Join the BPFA family today and start your martial arts journey. Our
+            expert instructors are ready to guide you every step of the way.
           </p>
           <Link
             href="/join"

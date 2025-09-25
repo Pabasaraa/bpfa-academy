@@ -6,15 +6,15 @@ export default function GalleryPage() {
   return (
     <main className="min-h-screen bg-background">
       <Navigation />
-      <div className="relative h-[45vh] bg-gradient-to-br from-black/90 to-black/80 overflow-hidden">
+      <div className="relative h-[55vh] bg-gradient-to-br from-black/90 to-black/80 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25"
           style={{
             backgroundImage: "url('/home/our-legacy.jpg')",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/40" />
-        <div className="relative z-10 flex items-center justify-center h-full">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/40" />
+        <div className="relative z-10 flex items-center justify-center h-full animate-fade-in-up">
           <div className="text-center max-w-4xl px-4">
             <div className="mb-6">
               <span className="text-red-400 text-sm font-light tracking-[0.4em] uppercase">

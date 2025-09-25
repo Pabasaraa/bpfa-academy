@@ -14,10 +14,6 @@ interface TrainerData {
   bio: string;
   certifications: string[];
   philosophy: string;
-  schedule: {
-    day: string;
-    classes: string[];
-  }[];
   styles: string[];
 }
 
@@ -123,21 +119,6 @@ export function TrainerModal({
                       >
                         <Dot className="w-3 h-3 text-red-500 flex-shrink-0" />
                         {style}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Schedule */}
-                <div>
-                  <h4 className="text-white font-bold mb-3 text-sm tracking-wider">
-                    SCHEDULE
-                  </h4>
-                  <div className="space-y-2">
-                    {trainerData.schedule.slice(0, 3).map((session, index) => (
-                      <div key={index} className="flex justify-between text-sm">
-                        <span className="text-gray-400">{session.day}</span>
-                        <span className="text-white">{session.classes[0]}</span>
                       </div>
                     ))}
                   </div>

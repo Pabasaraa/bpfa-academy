@@ -7,7 +7,7 @@ export default function ContactPage() {
     <main className="min-h-screen bg-background">
       <Navigation />
 
-      <div className="relative h-[45vh] bg-gradient-to-br from-black/90 to-black/80 overflow-hidden">
+      <div className="relative h-[55vh] bg-gradient-to-br from-black/90 to-black/80 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-35"
           style={{
@@ -27,7 +27,7 @@ export default function ContactPage() {
             </h1>
             <div className="w-28 h-1 bg-red-600 mx-auto mb-8"></div>
             <p className="text-lg text-gray-300 tracking-widest uppercase">
-              COME TO THE BLACK PANTHER TODAY
+              COME TO THE BPFA TODAY
             </p>
           </div>
         </div>
