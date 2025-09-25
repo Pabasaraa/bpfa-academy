@@ -1,15 +1,17 @@
-import { Button } from "@/components/ui/button"
-import { Phone, MapPin, Clock } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Phone, MapPin, Clock, MessageCircle } from "lucide-react";
+import Link from "next/link";
+import contactData from "@/data/contact.json";
 
 export function CallToAction() {
   return (
     <section className="py-20 bg-background relative overflow-hidden">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-50">
         <div
-          className="w-full h-full bg-repeat"
+          className="w-full h-full bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('/martial-arts-pattern-geometric.jpg')`,
+            backgroundImage: `url('/home/ready-to-begin.jpg')`,
           }}
         />
       </div>
@@ -21,24 +23,20 @@ export function CallToAction() {
             <span className="block text-primary">WARRIOR JOURNEY?</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
-            Take the first step towards transforming your body, mind, and spirit. Join hundreds of warriors who have
-            already begun their journey at Black Panther Fighting Academy.
+            Take the first step towards transforming your body, mind, and
+            spirit. Join hundreds of warriors who have already begun their
+            journey at Black Panther Fighting Academy.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-8 py-4"
-            >
-              START FREE TRIAL
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-foreground text-foreground hover:bg-foreground hover:text-background font-semibold text-lg px-8 py-4 bg-transparent"
-            >
-              SCHEDULE VISIT
-            </Button>
+            <Link href={"/join"}>
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-base px-8 py-4"
+              >
+                JOIN NOW
+              </Button>
+            </Link>
           </div>
         </div>
 
@@ -47,27 +45,33 @@ export function CallToAction() {
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
               <Phone className="w-8 h-8 text-primary" />
             </div>
-            <h3 className="font-work-sans font-bold text-lg text-foreground mb-2">Call Us</h3>
-            <p className="text-muted-foreground">+94 77 123 4567</p>
+            <h3 className="font-work-sans font-bold text-lg text-foreground mb-2">
+              Call Us
+            </h3>
+            <p className="text-muted-foreground">{contactData.phone.primary}</p>
+          </div>
+
+          <div className="text-center">
+            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <MessageCircle className="w-8 h-8 text-primary" />
+            </div>
+            <h3 className="font-work-sans font-bold text-lg text-foreground mb-2">
+              WhatsApp Us
+            </h3>
+            <p className="text-muted-foreground">{contactData.phone.primary}</p>
           </div>
 
           <div className="text-center">
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
               <MapPin className="w-8 h-8 text-primary" />
             </div>
-            <h3 className="font-work-sans font-bold text-lg text-foreground mb-2">Visit Us</h3>
-            <p className="text-muted-foreground">123 Galle Road, Colombo 03</p>
-          </div>
-
-          <div className="text-center">
-            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Clock className="w-8 h-8 text-primary" />
-            </div>
-            <h3 className="font-work-sans font-bold text-lg text-foreground mb-2">Training Hours</h3>
-            <p className="text-muted-foreground">Mon-Sat: 6AM-10PM</p>
+            <h3 className="font-work-sans font-bold text-lg text-foreground mb-2">
+              Visit Us
+            </h3>
+            <p className="text-muted-foreground">{contactData.address.city}, {contactData.address.country}</p>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

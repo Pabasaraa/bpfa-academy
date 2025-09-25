@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Instagram, Youtube, Twitter } from "lucide-react"
+import contactData from "@/data/contact.json"
 
 export function Footer() {
   return (
@@ -27,7 +28,7 @@ export function Footer() {
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
                 <Facebook className="w-6 h-6" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href={contactData.social.instagram.url} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Instagram className="w-6 h-6" />
               </a>
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
@@ -70,10 +71,10 @@ export function Footer() {
           <div>
             <h3 className="font-work-sans font-bold text-lg text-foreground mb-4">Contact Info</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li>123 Galle Road</li>
-              <li>Colombo 03, Sri Lanka</li>
-              <li>+94 77 123 4567</li>
-              <li>info@blackpantherfighting.lk</li>
+              <li>{contactData.address.street}</li>
+              <li>{contactData.address.city}, {contactData.address.country}</li>
+              <li>{contactData.phone.primary}</li>
+              <li>{contactData.email.primary}</li>
             </ul>
           </div>
         </div>

@@ -1,12 +1,13 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Shield, Target, Users, Trophy } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card";
+import { Shield, Target, Users, Trophy } from "lucide-react";
 
 export function AboutSection() {
   const values = [
     {
       icon: Shield,
       title: "Discipline",
-      description: "Building character through structured training and mental fortitude",
+      description:
+        "Building character through structured training and mental fortitude",
     },
     {
       icon: Target,
@@ -23,7 +24,7 @@ export function AboutSection() {
       title: "Excellence",
       description: "Pursuing greatness in every aspect of martial arts",
     },
-  ]
+  ];
 
   return (
     <section className="py-20 bg-card">
@@ -34,23 +35,31 @@ export function AboutSection() {
             <span className="block text-primary">FORGED</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            At Black Panther Fighting Academy, we don't just teach martial arts – we forge warriors. Our philosophy
-            combines ancient martial arts wisdom with modern training methodologies to create complete fighters who
-            excel both in combat and in life.
+            At Black Panther Fighting Academy, we don't just teach martial arts
+            – we forge warriors. Our philosophy combines ancient martial arts
+            wisdom with modern training methodologies to create complete
+            fighters who excel both in combat and in life.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {values.map((value, index) => (
-            <Card key={index} className="bg-background border-border hover:border-primary transition-colors group">
+            <Card
+              key={index}
+              className="bg-background border-border hover:border-primary transition-colors group"
+            >
               <CardContent className="p-6 text-center">
                 <div className="mb-4 flex justify-center">
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <value.icon className="w-8 h-8 text-primary" />
                   </div>
                 </div>
-                <h3 className="font-work-sans font-bold text-xl text-foreground mb-3">{value.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{value.description}</p>
+                <h3 className="font-work-sans font-bold text-xl text-foreground mb-3">
+                  {value.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {value.description}
+                </p>
               </CardContent>
             </Card>
           ))}
@@ -63,17 +72,22 @@ export function AboutSection() {
             </h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Founded with the vision of bringing world-class martial arts training to Sri Lanka, Black Panther
-                Fighting Academy has become the premier destination for serious fighters and fitness enthusiasts alike.
+                Founded with the vision of bringing world-class martial arts
+                training to Sri Lanka, Black Panther Fighting Academy has become
+                the premier destination for serious fighters and fitness
+                enthusiasts alike.
               </p>
               <p>
-                Our state-of-the-art facility houses multiple training areas, professional-grade equipment, and an
-                environment designed to push you beyond your limits while ensuring your safety and growth.
+                Our state-of-the-art facility houses multiple training areas,
+                professional-grade equipment, and an environment designed to
+                push you beyond your limits while ensuring your safety and
+                growth.
               </p>
               <p>
-                Whether you're a complete beginner looking to learn self-defense or an experienced fighter aiming to
-                compete at the highest levels, our expert instructors will guide you on your journey to becoming the
-                best version of yourself.
+                Whether you're a complete beginner looking to learn self-defense
+                or an experienced fighter aiming to compete at the highest
+                levels, our expert instructors will guide you on your journey to
+                becoming the best version of yourself.
               </p>
             </div>
           </div>
@@ -81,7 +95,7 @@ export function AboutSection() {
             <div
               className="w-full h-96 bg-cover bg-center rounded-lg"
               style={{
-                backgroundImage: `url('/modern-martial-arts-gym-interior-with-training-equ.jpg')`,
+                backgroundImage: `url('/home/our-legacy.jpg')`,
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent rounded-lg"></div>
@@ -89,5 +103,5 @@ export function AboutSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -1,57 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import classesData from "@/data/classes.json";
 
 export function ClassesGrid() {
-  const classes = [
-    {
-      id: "mma",
-      name: "MIXED MARTIAL ARTS",
-      shortDescription:
-        "Complete fighting system combining striking, grappling, and ground fighting",
-      image:
-        "https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-      instructor: "ANTHONY JAMES",
-      tagline: "ULTIMATE COMBAT DISCIPLINE",
-    },
-    {
-      id: "muay-thai",
-      name: "MUAY THAI BOXING",
-      shortDescription:
-        "The art of eight limbs using fists, elbows, knees, and shins",
-      image:
-        "https://images.unsplash.com/photo-1555597673-b21d5c935865?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-      instructor: "BUAKAW W. ANTHONY B.",
-      tagline: "THE ART OF EIGHT LIMBS",
-    },
-    {
-      id: "kung-fu",
-      name: "KYOKUSHIN KARATE",
-      shortDescription:
-        "Ancient Chinese martial art emphasizing fluid movements and deadly precision",
-      image: "/classes/karate.jpg",
-      instructor: "JET LEE, BRUCE LEE",
-      tagline: "ANCIENT WISDOM, DEADLY PRECISION",
-    },
-    {
-      id: "kickboxing",
-      name: "KICK BOXING",
-      shortDescription:
-        "High-intensity striking art combining punches, kicks, and cardio conditioning",
-      image: "/classes/kickboxing.jpg",
-      instructor: "LAURA JAMES",
-      tagline: "POWER, PRECISION, PASSION",
-    },
-    {
-      id: "bjj",
-      name: "BRAZILIAN JIU-JITSU",
-      shortDescription:
-        "Ground fighting art focusing on leverage, technique, and submission holds",
-      image: "/classes/jiu-jitsu.jpg",
-      instructor: "FABRICIO DA SILVA",
-      tagline: "MOVE LIKE A SNAKE, STING LIKE A BEE!",
-    },
-  ];
+  const classes = classesData;
 
   return (
     <section className="py-16 bg-black ">

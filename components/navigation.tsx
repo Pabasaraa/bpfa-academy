@@ -54,6 +54,12 @@ export function Navigation() {
               Trainers
             </Link>
             <Link
+              href="/gallery"
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Gallery
+            </Link>
+            <Link
               href="/contact"
               className="text-foreground hover:text-primary transition-colors"
             >
@@ -108,6 +114,13 @@ export function Navigation() {
                 onClick={() => setIsOpen(false)}
               >
                 Trainers
+              </Link>
+              <Link
+                href="/instagram"
+                className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Instagram
               </Link>
               <Link
                 href="/contact"

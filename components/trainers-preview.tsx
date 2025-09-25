@@ -1,88 +1,100 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Award, Users } from "lucide-react"
-import Link from "next/link"
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Crown, Award, Calendar } from "lucide-react";
+import Link from "next/link";
+import trainersData from "@/data/trainers.json";
 
 export function TrainersPreview() {
-  const trainers = [
-    {
-      name: "Sensei Rajesh Kumar",
-      specialty: "MMA & Kickboxing",
-      experience: "15+ Years",
-      achievements: "Former National Champion",
-      image: "/martial-arts-instructor-male-serious-professional.jpg",
-      students: "200+",
-    },
-    {
-      name: "Coach Priya Silva",
-      specialty: "Brazilian Jiu-Jitsu",
-      experience: "12+ Years",
-      achievements: "Black Belt BJJ",
-      image: "/female-martial-arts-instructor-bjj-professional.jpg",
-      students: "150+",
-    },
-    {
-      name: "Master Chen Wei",
-      specialty: "Boxing & Conditioning",
-      experience: "20+ Years",
-      achievements: "International Boxing Coach",
-      image: "/boxing-coach-male-experienced-professional.jpg",
-      students: "300+",
-    },
-  ]
+  const trainers = trainersData.map((trainer) => ({
+    id: trainer.id,
+    name: trainer.name,
+    specialty: trainer.specialty,
+    experience: trainer.experience,
+    achievements: trainer.achievements[0],
+    image: trainer.image,
+    isHead: trainer.head || false,
+  }));
 
   return (
     <section className="py-20 bg-card">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-work-sans font-bold text-3xl md:text-5xl text-foreground mb-6">
-            LEARN FROM THE
-            <span className="block text-primary">MASTERS</span>
+          <div className="mb-6">
+            <span className="text-red-400 text-sm font-light tracking-[0.4em] uppercase">
+              Elite Training Staff
+            </span>
+          </div>
+          <h2 className="text-4xl md:text-6xl font-black text-white mb-8 tracking-wider">
+            WARRIOR
+            <span className="block text-red-500">MASTERS</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Our world-class instructors bring decades of experience, championship titles, and a passion for teaching
-            that will elevate your martial arts journey.
+          <div className="w-28 h-1 bg-red-600 mx-auto mb-8"></div>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            Train under champions who have proven themselves in the ring and
+            dedicated their lives to perfecting the martial arts.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          {trainers.map((trainer, index) => (
-            <Card
-              key={index}
-              className="bg-background border-border hover:border-primary transition-all duration-300 group overflow-hidden"
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          {trainers.slice(0, 3).map((trainer) => (
+            <div
+              key={trainer.id}
+              className={`relative group cursor-pointer transform hover:scale-105 transition-all duration-500 ${
+                trainer.isHead ? "md:col-span-3 lg:col-span-1" : ""
+              }`}
             >
-              <div className="relative">
+              <div className="relative overflow-hidden h-96 bg-gradient-to-br from-gray-800 to-black border border-gray-700 group-hover:border-red-500/50 transition-colors duration-300">
                 <div
-                  className="w-full h-64 bg-cover bg-center group-hover:scale-105 transition-transform duration-300"
+                  className="absolute inset-0 bg-cover bg-center opacity-60 group-hover:opacity-80 group-hover:scale-110 transition-all duration-700"
                   style={{ backgroundImage: `url('${trainer.image}')` }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent"></div>
-                <div className="absolute bottom-4 left-4 right-4">
-                  <h3 className="font-work-sans font-bold text-xl text-foreground mb-1">{trainer.name}</h3>
-                  <p className="text-primary font-semibold">{trainer.specialty}</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent" />
+
+                {trainer.isHead && (
+                  <div className="absolute top-4 right-4 z-20">
+                    <div className="flex items-center gap-2 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider">
+                      <Crown className="w-3 h-3" />
+                      HEAD COACH
+                    </div>
+                  </div>
+                )}
+
+                <div className="absolute inset-0 z-10 p-6 flex flex-col justify-end">
+                  <div className="transform group-hover:translate-y-0 translate-y-4 transition-transform duration-300">
+                    <h3 className="text-2xl md:text-3xl font-black text-white mb-2 tracking-wide">
+                      {trainer.name}
+                    </h3>
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                      <p className="text-red-400 font-bold text-sm uppercase tracking-widest">
+                        {trainer.specialty}
+                      </p>
+                    </div>
+
+                    <div className="space-y-2 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                      <div className="flex items-center gap-2 text-gray-300">
+                        <Award className="w-4 h-4 text-red-500" />
+                        <span className="text-sm">{trainer.achievements}</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-gray-300">
+                        <Calendar className="w-4 h-4 text-red-500" />
+                        <span className="text-sm">
+                          {trainer.experience} Experience
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-2 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-200">
+                      <span className="text-sm font-semibold uppercase tracking-wide">
+                        View Profile
+                      </span>
+                      <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" />
+                    </div>
+                  </div>
                 </div>
+
+                <div className="absolute inset-0 bg-gradient-to-t from-red-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
-              <CardContent className="p-6">
-                <div className="space-y-3 mb-6">
-                  <div className="flex items-center gap-2 text-muted-foreground">
-                    <Award className="w-4 h-4 text-primary" />
-                    <span className="text-sm">{trainer.achievements}</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-muted-foreground">
-                    <Users className="w-4 h-4 text-primary" />
-                    <span className="text-sm">{trainer.students} Students Trained</span>
-                  </div>
-                  <div className="text-muted-foreground text-sm">Experience: {trainer.experience}</div>
-                </div>
-                <Button
-                  variant="outline"
-                  className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground group-hover:bg-primary group-hover:text-primary-foreground transition-colors bg-transparent"
-                >
-                  View Profile
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </CardContent>
-            </Card>
+            </div>
           ))}
         </div>
 
@@ -90,14 +102,14 @@ export function TrainersPreview() {
           <Link href="/trainers">
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-8 py-4"
+              className="bg-red-600 hover:bg-red-700 text-white font-black text-base px-10 py-6 tracking-wider uppercase"
             >
-              MEET ALL TRAINERS
-              <ArrowRight className="ml-2 h-5 w-5" />
+              MEET THE LEGENDS
+              <ArrowRight className="ml-3 h-5 w-5" />
             </Button>
           </Link>
         </div>
       </div>
     </section>
-  )
+  );
 }

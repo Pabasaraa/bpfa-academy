@@ -1,0 +1,39 @@
+{
+  "address": {
+    "street": "123 Gampaha Road",
+    "city": "Yakkala",
+    "country": "Sri Lanka",
+    "landmark": "Near Food City",
+    "full": "123 Gampaha Road, Yakkala, Sri Lanka"
+  },
+  "phone": {
+    "primary": "+94 77 217 9493",
+    "display": "+94 77 217 9493"
+  },
+  "email": {
+    "primary": "bp.fightingacademy@gmail.com"
+  },
+  "hours": {
+    "weekdays": {
+      "days": "Monday - Friday",
+      "time": "6:00 AM - 10:00 PM"
+    },
+    "saturday": {
+      "day": "Saturday",
+      "time": "8:00 AM - 8:00 PM"
+    },
+    "sunday": {
+      "day": "Sunday",
+      "time": "10:00 AM - 6:00 PM"
+    }
+  },
+  "social": {
+    "instagram": {
+      "username": "fightingacademy31",
+      "url": "https://www.instagram.com/fightingacademy31/"
+    }
+  },
+  "maps": {
+    "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.29531647771!2d80.0154819!3d7.0917262999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2fd129095265f%3A0x5b4ed0a43a743b2c!2sBlack%20panther%20fighting%20academy!5e0!3m2!1sen!2slk!4v1758734339203!5m2!1sen!2slk"
+  }
+}

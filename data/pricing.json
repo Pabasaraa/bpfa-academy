@@ -1,0 +1,111 @@
+{
+  "monthlyDayPackages": [
+    {
+      "id": "4-days",
+      "name": "4 Days",
+      "price": 3000,
+      "originalPrice": null,
+      "description": "Perfect for beginners to get started",
+      "features": [
+        "Access to all classes",
+        "4 training sessions per month",
+        "Equipment usage included",
+        "Beginner-friendly support"
+      ],
+      "popular": false
+    },
+    {
+      "id": "8-days",
+      "name": "8 Days",
+      "price": 5000,
+      "originalPrice": null,
+      "description": "Ideal for regular training routine",
+      "features": [
+        "Access to all classes",
+        "8 training sessions per month",
+        "Equipment usage included",
+        "Progress tracking support",
+        "Nutrition guidance"
+      ],
+      "popular": true
+    },
+    {
+      "id": "15-days",
+      "name": "15 Days",
+      "price": 7000,
+      "originalPrice": null,
+      "description": "For serious martial artists",
+      "features": [
+        "Access to all classes",
+        "15 training sessions per month",
+        "Equipment usage included",
+        "Personal progress reviews",
+        "Nutrition guidance",
+        "Priority class booking"
+      ],
+      "popular": false
+    }
+  ],
+  "monthlyPackages": [
+    {
+      "id": "4-months",
+      "name": "4 Months",
+      "price": 25000,
+      "originalPrice": 28000,
+      "monthlyPrice": 6250,
+      "originalMonthlyPrice": 7000,
+      "savings": 3000,
+      "description": "Great value for committed learners",
+      "features": [
+        "Unlimited access to all classes",
+        "4 months full membership",
+        "Equipment usage included",
+        "Personal training sessions (2x)",
+        "Nutrition plan included",
+        "Progress assessments"
+      ],
+      "popular": false
+    },
+    {
+      "id": "8-months",
+      "name": "8 Months",
+      "price": 45000,
+      "originalPrice": 56000,
+      "monthlyPrice": 5625,
+      "originalMonthlyPrice": 7000,
+      "savings": 11000,
+      "description": "Best value for long-term training",
+      "features": [
+        "Unlimited access to all classes",
+        "8 months full membership",
+        "Equipment usage included",
+        "Personal training sessions (4x)",
+        "Complete nutrition program",
+        "Monthly progress reviews",
+        "Guest passes (2x per month)"
+      ],
+      "popular": true
+    },
+    {
+      "id": "12-months",
+      "name": "12 Months",
+      "price": 67000,
+      "originalPrice": 84000,
+      "monthlyPrice": 5583,
+      "originalMonthlyPrice": 7000,
+      "savings": 17000,
+      "description": "Ultimate commitment to martial arts mastery",
+      "features": [
+        "Unlimited access to all classes",
+        "Full year membership",
+        "Equipment usage included",
+        "Personal training sessions (6x)",
+        "Complete nutrition & meal planning",
+        "Bi-weekly progress reviews",
+        "Guest passes (4x per month)",
+        "Free martial arts gear package"
+      ],
+      "popular": false
+    }
+  ]
+}

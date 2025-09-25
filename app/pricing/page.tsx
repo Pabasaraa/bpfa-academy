@@ -1,96 +1,10 @@
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import Link from "next/link";
+import pricingData from "@/data/pricing.json";
 
 export default function PricingPage() {
-  const monthlyDayPackages = [
-    {
-      name: "4 Days",
-      price: 3000,
-      description: "Perfect for beginners to get started",
-      features: [
-        "Access to all classes",
-        "4 training sessions per month",
-        "Equipment usage included",
-        "Beginner-friendly support",
-      ],
-    },
-    {
-      name: "8 Days",
-      price: 5000,
-      description: "Ideal for regular training routine",
-      features: [
-        "Access to all classes",
-        "8 training sessions per month",
-        "Equipment usage included",
-        "Progress tracking support",
-        "Nutrition guidance",
-      ],
-      popular: true,
-    },
-    {
-      name: "15 Days",
-      price: 7000,
-      description: "For serious martial artists",
-      features: [
-        "Access to all classes",
-        "15 training sessions per month",
-        "Equipment usage included",
-        "Personal progress reviews",
-        "Nutrition guidance",
-        "Priority class booking",
-      ],
-    },
-  ];
-
-  const monthlyPackages = [
-    {
-      name: "4 Months",
-      price: 25000,
-      monthlyPrice: 6250,
-      description: "Great value for committed learners",
-      features: [
-        "Unlimited access to all classes",
-        "4 months full membership",
-        "Equipment usage included",
-        "Personal training sessions (2x)",
-        "Nutrition plan included",
-        "Progress assessments",
-      ],
-    },
-    {
-      name: "8 Months",
-      price: 50000,
-      monthlyPrice: 6250,
-      description: "Best value for long-term training",
-      features: [
-        "Unlimited access to all classes",
-        "8 months full membership",
-        "Equipment usage included",
-        "Personal training sessions (4x)",
-        "Complete nutrition program",
-        "Monthly progress reviews",
-        "Guest passes (2x per month)",
-      ],
-      popular: true,
-    },
-    {
-      name: "12 Months",
-      price: 75000,
-      monthlyPrice: 6250,
-      description: "Ultimate commitment to martial arts mastery",
-      features: [
-        "Unlimited access to all classes",
-        "Full year membership",
-        "Equipment usage included",
-        "Personal training sessions (6x)",
-        "Complete nutrition & meal planning",
-        "Bi-weekly progress reviews",
-        "Guest passes (4x per month)",
-        "Free martial arts gear package",
-      ],
-    },
-  ];
+  const { monthlyDayPackages, monthlyPackages } = pricingData;
 
   return (
     <main className="min-h-screen bg-black">
@@ -184,9 +98,12 @@ export default function PricingPage() {
             <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-wider">
               MONTHLY PACKAGES
             </h2>
-            <p className="text-gray-400 text-lg">
+            <p className="text-gray-400 text-lg mb-4">
               Long-term commitment for serious martial artists
             </p>
+            <div className="inline-flex items-center bg-red-600 text-white px-6 py-2 rounded-full font-bold text-sm uppercase tracking-wider">
+              🔥 Special Discounts Available - Save up to LKR 17,000!
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -209,14 +126,31 @@ export default function PricingPage() {
                   </h3>
                   <p className="text-gray-400 mb-6">{pkg.description}</p>
 
-                  <div className="mb-2">
+                  <div className="mb-4">
+                    {pkg.originalPrice && (
+                      <div className="flex items-center gap-3 mb-2">
+                        <span className="text-2xl text-gray-500 line-through">
+                          LKR {pkg.originalPrice.toLocaleString()}
+                        </span>
+                        <span className="bg-red-600 text-white px-2 py-1 text-xs font-bold rounded-full">
+                          SAVE LKR {pkg.savings.toLocaleString()}
+                        </span>
+                      </div>
+                    )}
                     <span className="text-5xl font-black text-red-500">
                       LKR {pkg.price.toLocaleString()}
                     </span>
                   </div>
-                  <p className="text-gray-400 mb-8">
-                    LKR {pkg.monthlyPrice.toLocaleString()}/month equivalent
-                  </p>
+                  <div className="mb-8">
+                    {pkg.originalMonthlyPrice && (
+                      <p className="text-gray-500 text-sm line-through">
+                        Was LKR {pkg.originalMonthlyPrice.toLocaleString()}/month
+                      </p>
+                    )}
+                    <p className="text-gray-400 font-semibold">
+                      Now LKR {pkg.monthlyPrice.toLocaleString()}/month equivalent
+                    </p>
+                  </div>
 
                   <ul className="space-y-3">
                     {pkg.features.map((feature, idx) => (

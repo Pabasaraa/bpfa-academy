@@ -1,6 +1,7 @@
-"use client"
+"use client";
 
-import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import contactData from "@/data/contact.json";
 
 export function ContactSection() {
   return (
@@ -10,7 +11,9 @@ export function ContactSection() {
           {/* Contact Information */}
           <div className="space-y-12">
             <div>
-              <h2 className="text-4xl font-black text-white mb-8 tracking-wide">GET IN TOUCH</h2>
+              <h2 className="text-4xl font-black text-white mb-8 tracking-wide">
+                GET IN TOUCH
+              </h2>
               <div className="w-16 h-1 bg-red-600 mb-8"></div>
             </div>
 
@@ -20,13 +23,15 @@ export function ContactSection() {
                   <MapPin className="w-6 h-6 text-red-600 mt-1" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-2">Location</h3>
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    Location
+                  </h3>
                   <p className="text-gray-300 leading-relaxed">
-                    123 Warrior Street
+                    {contactData.address.street}
                     <br />
-                    Colombo 07, Sri Lanka
+                    {contactData.address.city}, {contactData.address.country}
                     <br />
-                    Near Independence Square
+                    {contactData.address.landmark}
                   </p>
                 </div>
               </div>
@@ -37,8 +42,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">Phone</h3>
-                  <p className="text-gray-300">+94 11 234 5678</p>
-                  <p className="text-gray-300">+94 77 123 4567</p>
+                  <p className="text-gray-300">{contactData.phone.primary}</p>
                 </div>
               </div>
 
@@ -48,8 +52,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">Email</h3>
-                  <p className="text-gray-300">info@blackpantherfighting.lk</p>
-                  <p className="text-gray-300">training@blackpantherfighting.lk</p>
+                  <p className="text-gray-300">{contactData.email.primary}</p>
                 </div>
               </div>
 
@@ -58,11 +61,13 @@ export function ContactSection() {
                   <Clock className="w-6 h-6 text-red-600 mt-1" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-2">Training Hours</h3>
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    Training Hours
+                  </h3>
                   <div className="text-gray-300 space-y-1">
-                    <p>Monday - Friday: 6:00 AM - 10:00 PM</p>
-                    <p>Saturday: 8:00 AM - 8:00 PM</p>
-                    <p>Sunday: 10:00 AM - 6:00 PM</p>
+                    <p>{contactData.hours.weekdays.days}: {contactData.hours.weekdays.time}</p>
+                    <p>{contactData.hours.saturday.day}: {contactData.hours.saturday.time}</p>
+                    <p>{contactData.hours.sunday.day}: {contactData.hours.sunday.time}</p>
                   </div>
                 </div>
               </div>
@@ -70,10 +75,12 @@ export function ContactSection() {
 
             {/* Call to Action */}
             <div className="bg-red-900/20 border border-red-900/30 rounded-lg p-8">
-              <h3 className="text-2xl font-bold text-white mb-4">Ready to Train?</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Ready to Train?
+              </h3>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                Join the Black Panther family and unleash your inner warrior. Contact us today to schedule your first
-                training session.
+                Join the Black Panther family and unleash your inner warrior.
+                Contact us today to schedule your first training session.
               </p>
               <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300">
                 START YOUR JOURNEY
@@ -84,13 +91,15 @@ export function ContactSection() {
           {/* Map */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-4xl font-black text-white mb-8 tracking-wide">VISIT US</h2>
+              <h2 className="text-4xl font-black text-white mb-8 tracking-wide">
+                VISIT US
+              </h2>
               <div className="w-16 h-1 bg-red-600 mb-8"></div>
             </div>
 
             <div className="relative h-96 bg-gray-900 rounded-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.798467128636!2d79.86131831477237!3d6.914744995010526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259684e2f8b7b%3A0x8c5b8b8b8b8b8b8b!2sIndependence%20Square%2C%20Colombo%2007%2C%20Sri%20Lanka!5e0!3m2!1sen!2sus!4v1635000000000!5m2!1sen!2sus"
+                src={contactData.maps.embedUrl}
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -113,12 +122,14 @@ export function ContactSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-4 left-4 text-white">
                 <p className="text-lg font-bold">State-of-the-Art Facility</p>
-                <p className="text-sm text-gray-300">Professional training equipment & spacious mats</p>
+                <p className="text-sm text-gray-300">
+                  Professional training equipment & spacious mats
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
