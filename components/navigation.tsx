@@ -20,28 +20,25 @@ export function Navigation() {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/60 backdrop-blur-sm border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
           className={`flex items-center relative md:justify-between transition-all duration-300 ${
-            isScrolled ? "h-16" : "h-28"
+            isScrolled ? "h-16" : "h-16"
           }`}
         >
           {/* Logo */}
-          <Link
-            href="/"
-            className="flex flex-1 justify-center md:justify-start items-center space-x-2"
-          >
+          <Link href="/" className="flex flex-1 items-center space-x-2">
             <Image
               src="/images/logo.png"
               alt="BPFA"
-              width={isScrolled ? 50 : 80}
-              height={isScrolled ? 50 : 80}
+              width={isScrolled ? 50 : 50}
+              height={isScrolled ? 50 : 50}
               className="rounded-full transition-all duration-300"
             />
-            {/* <span className="font-work-sans font-bold text-2xl text-foreground">
+            <span className="font-work-sans font-bold text-xl lg:text-2xl text-foreground">
               BPFA
-            </span> */}
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -119,6 +116,13 @@ export function Navigation() {
                 Home
               </Link>
               <Link
+                href="/pricing"
+                className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Pricing
+              </Link>
+              <Link
                 href="/classes"
                 className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
@@ -133,11 +137,11 @@ export function Navigation() {
                 Trainers
               </Link>
               <Link
-                href="/instagram"
+                href="/gallery"
                 className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Instagram
+                Gallery
               </Link>
               <Link
                 href="/contact"
@@ -150,6 +154,7 @@ export function Navigation() {
                 <Link
                   href="/join"
                   className="w-full cursor-pointer bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-2 py-2 rounded-lg"
+                  onClick={() => setIsOpen(false)}
                 >
                   Join Now
                 </Link>

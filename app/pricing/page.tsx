@@ -1,4 +1,3 @@
-import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import Link from "next/link";
 import pricingData from "@/data/pricing.json";
@@ -8,10 +7,8 @@ export default function PricingPage() {
 
   return (
     <main className="min-h-screen bg-black">
-      <Navigation />
-
       {/* Hero Section */}
-      <div className="relative h-[55vh] bg-gradient-to-br from-black/90 to-black/80 overflow-hidden">
+      <div className="relative h-[50vh] bg-gradient-to-br from-black/80 to-black/70 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25"
           style={{
@@ -19,18 +16,18 @@ export default function PricingPage() {
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/40" />
-        <div className="relative z-10 flex items-center justify-center h-full animate-fade-in-up">
-          <div className="text-center max-w-4xl px-4">
-            <div className="mb-6">
-              <span className="text-red-400 text-sm font-light tracking-[0.4em] uppercase">
+        <div className="relative z-10 pt-16 flex items-center justify-center h-full animate-fade-in-up">
+          <div className="text-center max-w-4xl px-4 sm:px-6">
+            <div className="mb-4 sm:mb-6">
+              <span className="text-red-400 text-xs sm:text-sm font-light tracking-[0.3em] sm:tracking-[0.4em] uppercase">
                 CHOOSE YOUR PATH
               </span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-black text-white mb-8 tracking-wider">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-white mb-6 sm:mb-8 tracking-wide sm:tracking-wider">
               PRICING
             </h1>
-            <div className="w-28 h-1 bg-red-600 mx-auto mb-8"></div>
-            <p className="text-xl md:text-2xl text-gray-200 font-light tracking-wide mb-4">
+            <div className="w-20 sm:w-28 h-1 bg-red-600 mx-auto mb-6 sm:mb-8"></div>
+            <p className="text-sm sm:text-lg md:text-xl text-gray-200 font-light tracking-wide mb-4 px-2">
               FLEXIBLE PACKAGES FOR EVERY WARRIOR
             </p>
           </div>
@@ -38,10 +35,10 @@ export default function PricingPage() {
       </div>
 
       {/* Monthly Day Packages */}
-      <section className="py-20 px-4">
+      <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-wider">
+            <h2 className="text-3xl md:text-4xl font-black text-white mb-4 tracking-wider">
               MONTHLY DAY PACKAGES
             </h2>
             <p className="text-gray-400 text-lg">
@@ -95,7 +92,7 @@ export default function PricingPage() {
       <section className="py-20 px-4 bg-gray-950">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-wider">
+            <h2 className="text-3xl md:text-4xl  font-black text-white mb-4 tracking-wider">
               MONTHLY PACKAGES
             </h2>
             <p className="text-gray-400 text-lg mb-4">

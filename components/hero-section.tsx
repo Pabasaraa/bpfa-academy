@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen sm:min-h-screen flex items-center justify-center overflow-hidden py-20 sm:py-0">
+    <section className="relative min-h-screen lg:-mt-16 flex items-center justify-center overflow-hidden py-12 sm:py-16 lg:py-20">
       <div className="absolute inset-0 z-0">
         <div
           className="w-full h-full bg-cover bg-center bg-no-repeat"
@@ -20,25 +20,25 @@ export function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in-up">
           {/* Logo */}
-          <div className="hidden sm:block mb-4 sm:mb-8">
+          <div className="mb-3 sm:mb-6 lg:mb-8">
             <Image
               src="/images/logo.png"
               alt="BPFA"
               width={80}
               height={80}
-              className="mx-auto rounded-full sm:w-[120px] sm:h-[120px]"
+              className="mx-auto rounded-full sm:w-[100px] sm:h-[100px] lg:w-[120px] lg:h-[120px]"
             />
           </div>
 
           {/* Main Heading */}
-          <h1 className="font-work-sans font-black text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-foreground mb-4 sm:mb-6 leading-tight">
+          <h1 className="font-work-sans font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-4 lg:mb-6 leading-tight">
             UNLEASH THE
             <span className="block text-primary">FIGHTER</span>
             <span className="block">IN YOU</span>
           </h1>
 
           {/* Subheading */}
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-6 lg:mb-8 max-w-3xl mx-auto leading-relaxed">
             Transform your body and mind at Sri Lanka's premier martial arts
             academy. Master MMA, Boxing, Jiu-Jitsu, and more with world-class
             trainers.
@@ -61,21 +61,21 @@ export function HeroSection() {
           </div>
 
           {/* Stats */}
-          <div className="mt-8 sm:mt-12 md:mt-16 grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mx-auto">
+          <div className="mt-6 sm:mt-8 lg:mt-12 xl:mt-16 grid grid-cols-3 gap-4 sm:gap-8 max-w-2xl mx-auto">
             <div className="text-center">
               <div className="text-2xl sm:text-3xl md:text-4xl font-work-sans font-bold text-primary">
-                500+
+                365
               </div>
               <div className="text-sm sm:text-base text-muted-foreground font-medium">
-                Active Members
+                Days Open
               </div>
             </div>
             <div className="text-center">
               <div className="text-2xl sm:text-3xl md:text-4xl font-work-sans font-bold text-primary">
-                15+
+                5+
               </div>
               <div className="text-sm sm:text-base text-muted-foreground font-medium">
-                Expert Trainers
+                MASTERS
               </div>
             </div>
             <div className="text-center">
@@ -90,7 +90,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute hidden lg:block bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-red-400 rounded-full flex justify-center bg-black/20 backdrop-blur-sm">
           <div className="w-1 h-3 bg-red-400 rounded-full mt-2 animate-pulse"></div>
         </div>

@@ -2,7 +2,7 @@
   {
     "id": "nilanka-madushan",
     "head": true,
-    "name": "COACH NILANKA MADUSHAN",
+    "name": "NILANKA MADUSHAN",
     "specialty": "BOXING & CONDITIONING",
     "experience": "20+ Years",
     "achievements": [
@@ -55,9 +55,30 @@
     "styles": ["MMA", "MOI TATI", "KICKBOXING"]
   },
   {
+    "id": "isuru-prabhathiya",
+    "head": false,
+    "name": "ISURU PRABHATHIYA",
+    "specialty": "BRAZILIAN JIU-JITSU",
+    "experience": "5+ Years",
+    "achievements": [
+      "2018 nationals Muay Thai champion",
+      "CFC 2022 Middle Weight Winner"
+    ],
+    "image": "/coaches/coach-isuru.jpeg",
+    "bio": "Coach Isuru Prabhathiya broke barriers as the first female BJJ black belt in Sri Lanka. Her technical precision and innovative teaching methods have revolutionized ground fighting in the region.",
+    "certifications": [
+      "BJJ Black Belt (3rd Degree)",
+      "IBJJF Certified Referee",
+      "Women's Self-Defense Instructor",
+      "Youth Martial Arts Specialist"
+    ],
+    "philosophy": "Technique conquers strength, timing beats speed, and leverage defeats size.",
+    "styles": ["MMA", "MOI TATI", "KICKBOXING"]
+  },
+  {
     "id": "sahan-thisaranga",
     "head": false,
-    "name": "COACH SAHAN THISARANGA",
+    "name": "SAHAN THISARANGA",
     "specialty": "BRAZILIAN JIU-JITSU",
     "experience": "12+ Years",
     "achievements": [
@@ -76,17 +97,17 @@
     "styles": ["MMA", "MOI TATI", "KICKBOXING"]
   },
   {
-    "id": "sahan-thisaranga",
+    "id": "devinda-kodisinghe",
     "head": false,
-    "name": "COACH SAHAN THISARANGA",
+    "name": "DEVINDA KODISINGHE",
     "specialty": "BRAZILIAN JIU-JITSU",
-    "experience": "12+ Years",
+    "experience": "5+ Years",
     "achievements": [
       "2018 nationals Muay Thai champion",
       "CFC 2022 Middle Weight Winner"
     ],
-    "image": "/coaches/coach-2.jpeg",
-    "bio": "Coach Sahan Thisaranga broke barriers as the first female BJJ black belt in Sri Lanka. Her technical precision and innovative teaching methods have revolutionized ground fighting in the region.",
+    "image": "/coaches/coach-devinda.jpg",
+    "bio": "Coach Devinda Kodisinghe broke barriers as the first female BJJ black belt in Sri Lanka. Her technical precision and innovative teaching methods have revolutionized ground fighting in the region.",
     "certifications": [
       "BJJ Black Belt (3rd Degree)",
       "IBJJF Certified Referee",

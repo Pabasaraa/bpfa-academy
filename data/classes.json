@@ -1,9 +1,9 @@
 [
   {
     "id": "mma",
-    "name": "MIXED MARTIAL ARTS",
+    "name": "MIXED MARTIAL ARTS (MMA)",
     "shortDescription": "Complete fighting system combining striking, grappling, and ground fighting",
-    "fullDescription": "Mixed Martial Arts (MMA) is the ultimate combat sport that combines techniques from various martial arts disciplines. Our comprehensive MMA program teaches you striking from boxing and kickboxing, grappling from wrestling, and ground fighting from Brazilian Jiu-Jitsu. You'll develop into a complete fighter capable of handling any combat situation, whether standing or on the ground.",
+    "fullDescription": "Mixed Martial Arts (MMA) is the ultimate combat sport that combines techniques from various martial arts disciplines. Our comprehensive MMA program teaches you striking from boxing and kickboxing, and ground fighting from Brazilian Jiu-Jitsu. You'll develop into a complete fighter capable of handling any combat situation, whether standing or on the ground.",
     "image": "/classes/mma.jpg",
     "level": "All Levels",
     "duration": "90 min",
@@ -19,7 +19,6 @@
     "techniques": [
       "Boxing combinations",
       "Kickboxing techniques",
-      "Wrestling takedowns",
       "BJJ submissions",
       "Ground and pound",
       "Cage work"
@@ -59,7 +58,7 @@
   },
   {
     "id": "muay-thai",
-    "name": "MUAY THAI BOXING",
+    "name": "MUAY THAI",
     "shortDescription": "The art of eight limbs using fists, elbows, knees, and shins",
     "fullDescription": "Muay Thai, known as 'The Art of Eight Limbs,' is Thailand's national sport and one of the most effective striking arts in the world. Our Muay Thai program teaches you to use your fists, elbows, knees, and shins as weapons, while developing incredible conditioning and mental toughness. The training includes traditional techniques, clinch work, and the cultural aspects of this ancient martial art.",
     "image": "https://images.unsplash.com/photo-1555597673-b21d5c935865?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
@@ -116,59 +115,8 @@
     "tagline": "THE ART OF EIGHT LIMBS"
   },
   {
-    "id": "kung-fu",
-    "name": "KYOKUSHIN KARATE",
-    "shortDescription": "Ancient Chinese martial art emphasizing fluid movements and deadly precision",
-    "fullDescription": "KYOKUSHIN KARATE is one of the most sophisticated and deadly martial arts from China. This ancient system mimics the movements of the praying mantis, combining lightning-fast strikes with intricate trapping techniques. Our program teaches traditional forms, weapons training, and practical self-defense applications while developing incredible flexibility, balance, and mental focus.",
-    "image": "/classes/karate.jpg",
-    "level": "All Levels",
-    "duration": "60 min",
-    "intensity": "Medium",
-    "maxStudents": 18,
-    "benefits": [
-      "Improved flexibility and balance",
-      "Mental focus and discipline",
-      "Traditional martial arts knowledge",
-      "Stress relief through meditation",
-      "Cultural appreciation"
-    ],
-    "techniques": [
-      "Mantis claw strikes",
-      "Trapping techniques",
-      "Traditional forms",
-      "Weapons training",
-      "Meditation practices",
-      "Self-defense applications"
-    ],
-    "equipment": [
-      "Comfortable training clothes",
-      "Kung Fu shoes",
-      "Traditional weapons (provided)"
-    ],
-    "schedule": [
-      {
-        "day": "Tuesday",
-        "time": "6:30 PM - 7:30 PM",
-        "instructor": "Master Li Wei"
-      },
-      {
-        "day": "Thursday",
-        "time": "6:30 PM - 7:30 PM",
-        "instructor": "Master Li Wei"
-      },
-      {
-        "day": "Saturday",
-        "time": "2:00 PM - 3:00 PM",
-        "instructor": "Sifu Chen Ming"
-      }
-    ],
-    "price": { "monthly": 11500, "dropIn": 1700 },
-    "instructor": "JET LEE, BRUCE LEE",
-    "tagline": "ANCIENT WISDOM, DEADLY PRECISION"
-  },
-  {
     "id": "kickboxing",
-    "name": "KICK BOXING",
+    "name": "KICKBOXING",
     "shortDescription": "High-intensity striking art combining punches, kicks, and cardio conditioning",
     "fullDescription": "Kickboxing combines the punching techniques of boxing with the kicking techniques of karate, creating a dynamic and exciting martial art. Our kickboxing classes focus on developing powerful strikes, improving flexibility, and building incredible cardiovascular endurance. It's an excellent choice for those looking to learn effective striking while getting an amazing workout.",
     "image": "/classes/kickboxing.jpg",
@@ -226,7 +174,7 @@
   },
   {
     "id": "bjj",
-    "name": "BRAZILIAN JIU-JITSU",
+    "name": "BRAZILIAN JIU-JITSU (BJJ)",
     "shortDescription": "Ground fighting art focusing on leverage, technique, and submission holds",
     "fullDescription": "Brazilian Jiu-Jitsu (BJJ) is a martial art that focuses on ground fighting and submission grappling. Known as 'human chess,' BJJ teaches you to use leverage, timing, and technique to overcome larger, stronger opponents. Our BJJ program emphasizes both self-defense applications and sport competition, helping you develop problem-solving skills that extend far beyond the mat.",
     "image": "/classes/jiu-jitsu.jpg",

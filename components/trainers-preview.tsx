@@ -49,27 +49,26 @@ export function TrainersPreview() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent" />
 
-                {trainer.isHead && (
+                {trainer.isHead && trainer.id !== "nilanka-madushan" && (
                   <div className="absolute top-4 right-4 z-20">
                     <div className="flex items-center gap-2 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider">
-                      <Crown className="w-3 h-3" />
                       HEAD COACH
                     </div>
                   </div>
                 )}
 
-                <div className="absolute inset-0 z-10 p-6 flex flex-col justify-end">
-                  <div className="transform group-hover:translate-y-0 translate-y-4 transition-transform duration-300">
-                    <h3 className="text-2xl md:text-3xl font-black text-white mb-2 tracking-wide">
-                      {trainer.name}
-                    </h3>
-                    <div className="flex items-center gap-2 mb-3">
-                      <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                      <p className="text-red-400 font-bold text-sm uppercase tracking-widest">
-                        {trainer.specialty}
-                      </p>
+                {trainer.id === "nilanka-madushan" && (
+                  <div className="absolute top-4 right-4 z-20">
+                    <div className="flex items-center gap-2 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider">
+                      <Crown className="w-3 h-3" />
+                      FOUNDER & MASTER
                     </div>
+                  </div>
+                )}
 
+                <div className="relative z-10 p-8 h-full flex flex-col justify-end">
+                  <div className="transform group-hover:-translate-y-16 transition-transform duration-300">
+                    {/* Details shown on hover */}
                     <div className="space-y-2 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
                       <div className="flex items-center gap-2 text-gray-300">
                         <Award className="w-4 h-4 text-red-500" />
@@ -83,11 +82,23 @@ export function TrainersPreview() {
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-2 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-200">
+                    {/* CTA */}
+                    <div className="flex items-center gap-2 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-200 mb-4">
                       <span className="text-sm font-semibold uppercase tracking-wide">
                         View Profile
                       </span>
                       <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" />
+                    </div>
+
+                    {/* Main heading & specialty */}
+                    <h3 className="text-3xl md:text-4xl font-black text-white mb-4 tracking-wide">
+                      {trainer.name}
+                    </h3>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                      <p className="text-red-400 font-bold text-sm uppercase tracking-widest">
+                        {trainer.specialty}
+                      </p>
                     </div>
                   </div>
                 </div>
