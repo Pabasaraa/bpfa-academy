@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   description:
     "Unleash the Fighter in You at BPFA. Premier martial arts training including MMA, Boxing, Jiu-Jitsu, and Kickboxing in Sri Lanka.",
   generator: "v0.app",
+  icons: {
+    icon: "/images/logo.png",
+  },
 };
 
 export default function RootLayout({
