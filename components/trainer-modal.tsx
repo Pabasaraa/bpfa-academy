@@ -30,12 +30,12 @@ export function TrainerModal({
 }: TrainerModalProps) {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-6xl max-h-[95vh] overflow-y-auto bg-black border-red-900/50 p-0">
-        <div className="relative min-h-[80vh]">
+      <DialogContent className="max-w-6xl h-fit max-h-[95vh] overflow-y-auto bg-black border-red-900/50 p-0">
+        <div className="relative h-fit lg:min-h-[80vh]">
           {/* Main content layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[80vh]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 h-fit lg:min-h-[80vh]">
             {/* Left side - Trainer image */}
-            <div className="relative bg-black overflow-hidden">
+            <div className="relative hidden lg:block bg-black overflow-hidden">
               <div
                 className="absolute inset-0 bg-cover bg-center opacity-90"
                 style={{ backgroundImage: `url('${trainerData.image}')` }}

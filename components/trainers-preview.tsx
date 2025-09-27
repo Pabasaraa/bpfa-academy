@@ -1,18 +1,30 @@
+"use client";
+
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Crown, Award, Calendar } from "lucide-react";
 import Link from "next/link";
 import trainersData from "@/data/trainers.json";
+import { TrainerModal } from "./trainer-modal";
+
+interface TrainerData {
+  id: string;
+  head: boolean;
+  name: string;
+  specialty: string;
+  experience: string;
+  achievements: string[];
+  image: string;
+  bio: string;
+  certifications: string[];
+  philosophy: string;
+  styles: string[];
+}
 
 export function TrainersPreview() {
-  const trainers = trainersData.map((trainer) => ({
-    id: trainer.id,
-    name: trainer.name,
-    specialty: trainer.specialty,
-    experience: trainer.experience,
-    achievements: trainer.achievements[0],
-    image: trainer.image,
-    isHead: trainer.head || false,
-  }));
+  const [selectedTrainer, setSelectedTrainer] = useState<TrainerData | null>(
+    null
+  );
 
   return (
     <section className="py-20 bg-card">
@@ -35,11 +47,12 @@ export function TrainersPreview() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          {trainers.slice(0, 3).map((trainer) => (
+          {trainersData.slice(0, 3).map((trainer) => (
             <div
               key={trainer.id}
+              onClick={() => setSelectedTrainer(trainer)}
               className={`relative group cursor-pointer transform hover:scale-105 transition-all duration-500 ${
-                trainer.isHead ? "md:col-span-3 lg:col-span-1" : ""
+                trainer.head ? "md:col-span-3 lg:col-span-1" : ""
               }`}
             >
               <div className="relative overflow-hidden h-96 bg-gradient-to-br from-gray-800 to-black border border-gray-700 group-hover:border-red-500/50 transition-colors duration-300">
@@ -49,7 +62,7 @@ export function TrainersPreview() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent" />
 
-                {trainer.isHead && trainer.id !== "nilanka-madushan" && (
+                {trainer.head && trainer.id !== "nilanka-madushan" && (
                   <div className="absolute top-4 right-4 z-20">
                     <div className="flex items-center gap-2 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider">
                       HEAD COACH
@@ -72,7 +85,9 @@ export function TrainersPreview() {
                     <div className="space-y-2 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
                       <div className="flex items-center gap-2 text-gray-300">
                         <Award className="w-4 h-4 text-red-500" />
-                        <span className="text-sm">{trainer.achievements}</span>
+                        <span className="text-sm">
+                          {trainer.achievements[0]}
+                        </span>
                       </div>
                       <div className="flex items-center gap-2 text-gray-300">
                         <Calendar className="w-4 h-4 text-red-500" />
@@ -80,14 +95,6 @@ export function TrainersPreview() {
                           {trainer.experience} Experience
                         </span>
                       </div>
-                    </div>
-
-                    {/* CTA */}
-                    <div className="flex items-center gap-2 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-200 mb-4">
-                      <span className="text-sm font-semibold uppercase tracking-wide">
-                        View Profile
-                      </span>
-                      <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" />
                     </div>
 
                     {/* Main heading & specialty */}
@@ -121,6 +128,15 @@ export function TrainersPreview() {
           </Link>
         </div>
       </div>
+
+      {/* Modal */}
+      {selectedTrainer && (
+        <TrainerModal
+          trainerData={selectedTrainer}
+          isOpen={!!selectedTrainer}
+          onClose={() => setSelectedTrainer(null)}
+        />
+      )}
     </section>
   );
 }
