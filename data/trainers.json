@@ -3,7 +3,7 @@
     "id": "nilanka-madushan",
     "head": true,
     "name": "NILANKA MADUSHAN",
-    "specialty": "BOXING & CONDITIONING",
+    "specialty": "MMA, MUAY THAI & KICKBOXING",
     "experience": "20+ Years",
     "achievements": [
       "Thailand Muaythai fight 2016 Hua hin Winner",
@@ -21,20 +21,13 @@
       "Muay Thai Coach License C (World All Fight System Organization - AFSO)"
     ],
     "philosophy": "Boxing is not just about throwing punches - it's about building character, one round at a time.",
-    "styles": [
-      "Shotokan karate",
-      "JKD (Jeet Kune Do)",
-      "Kyokushin Karate",
-      "BJJ (Brazilian jiu-jitsu)",
-      "Krav maga",
-      "Muay thai"
-    ]
+    "styles": ["BJJ", "Muay thai"]
   },
   {
     "id": "kavindu-rasanjaya",
     "head": true,
     "name": "KAVIDNU RASANJAYA",
-    "specialty": "MMA, MOI TATI & KICKBOXING",
+    "specialty": "MMA, MUAY THAI & KICKBOXING",
     "experience": "9+ Years",
     "achievements": [
       "CFC (3 SEASONS) WINNER",
@@ -52,13 +45,13 @@
       "Sports Psychology Diploma"
     ],
     "philosophy": "Every warrior must forge their spirit in the fire of discipline and emerge stronger than steel.",
-    "styles": ["MMA", "MOI TATI", "KICKBOXING"]
+    "styles": ["MMA", "MUAY THAI", "KICKBOXING"]
   },
   {
     "id": "isuru-prabhathiya",
     "head": false,
     "name": "ISURU PRABHATHIYA",
-    "specialty": "BRAZILIAN JIU-JITSU",
+    "specialty": "BJJ & MMA",
     "experience": "5+ Years",
     "achievements": [
       "2018 nationals Muay Thai champion",
@@ -68,18 +61,17 @@
     "bio": "Coach Isuru Prabhathiya broke barriers as the first female BJJ black belt in Sri Lanka. Her technical precision and innovative teaching methods have revolutionized ground fighting in the region.",
     "certifications": [
       "BJJ Black Belt (3rd Degree)",
-      "IBJJF Certified Referee",
       "Women's Self-Defense Instructor",
       "Youth Martial Arts Specialist"
     ],
     "philosophy": "Technique conquers strength, timing beats speed, and leverage defeats size.",
-    "styles": ["MMA", "MOI TATI", "KICKBOXING"]
+    "styles": ["MMA", "BJJ"]
   },
   {
     "id": "sahan-thisaranga",
     "head": false,
     "name": "SAHAN THISARANGA",
-    "specialty": "BRAZILIAN JIU-JITSU",
+    "specialty": "MUAY THAI & KICKBOXING",
     "experience": "12+ Years",
     "achievements": [
       "2018 nationals Muay Thai champion",
@@ -89,18 +81,17 @@
     "bio": "Coach Sahan Thisaranga broke barriers as the first female BJJ black belt in Sri Lanka. Her technical precision and innovative teaching methods have revolutionized ground fighting in the region.",
     "certifications": [
       "BJJ Black Belt (3rd Degree)",
-      "IBJJF Certified Referee",
       "Women's Self-Defense Instructor",
       "Youth Martial Arts Specialist"
     ],
     "philosophy": "Technique conquers strength, timing beats speed, and leverage defeats size.",
-    "styles": ["MMA", "MOI TATI", "KICKBOXING"]
+    "styles": ["MUAY THAI", "KICKBOXING"]
   },
   {
     "id": "devinda-kodisinghe",
     "head": false,
     "name": "DEVINDA KODISINGHE",
-    "specialty": "BRAZILIAN JIU-JITSU",
+    "specialty": "MUAY THAI & KICKBOXING",
     "experience": "5+ Years",
     "achievements": [
       "2018 nationals Muay Thai champion",
@@ -110,11 +101,10 @@
     "bio": "Coach Devinda Kodisinghe broke barriers as the first female BJJ black belt in Sri Lanka. Her technical precision and innovative teaching methods have revolutionized ground fighting in the region.",
     "certifications": [
       "BJJ Black Belt (3rd Degree)",
-      "IBJJF Certified Referee",
       "Women's Self-Defense Instructor",
       "Youth Martial Arts Specialist"
     ],
     "philosophy": "Technique conquers strength, timing beats speed, and leverage defeats size.",
-    "styles": ["MMA", "MOI TATI", "KICKBOXING"]
+    "styles": ["MUAY THAI", "KICKBOXING"]
   }
 ]

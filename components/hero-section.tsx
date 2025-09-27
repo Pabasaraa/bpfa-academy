@@ -6,10 +6,10 @@ import Image from "next/image";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen lg:-mt-16 flex items-center justify-center overflow-hidden py-12 sm:py-16 lg:py-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden py-12 sm:py-16 lg:py-20">
       <div className="absolute inset-0 z-0">
         <div
-          className="w-full h-full bg-cover bg-center bg-no-repeat"
+          className="w-full h-full bg-center bg-no-repeat"
           style={{
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`,
           }}

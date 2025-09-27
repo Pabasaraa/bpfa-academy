@@ -1,9 +1,9 @@
 [
   {
     "id": "mma",
-    "name": "MIXED MARTIAL ARTS (MMA)",
+    "name": "MMA",
     "shortDescription": "Complete fighting system combining striking, grappling, and ground fighting",
-    "fullDescription": "Mixed Martial Arts (MMA) is the ultimate combat sport that combines techniques from various martial arts disciplines. Our comprehensive MMA program teaches you striking from boxing and kickboxing, and ground fighting from Brazilian Jiu-Jitsu. You'll develop into a complete fighter capable of handling any combat situation, whether standing or on the ground.",
+    "fullDescription": "MMA (Mixed Martial Arts) is the ultimate combat sport that combines techniques from various martial arts disciplines. Our comprehensive MMA program teaches you striking from boxing and kickboxing, and ground fighting from Brazilian Jiu-Jitsu. You'll develop into a complete fighter capable of handling any combat situation, whether standing or on the ground.",
     "image": "/classes/mma.jpg",
     "level": "All Levels",
     "duration": "90 min",
@@ -174,7 +174,7 @@
   },
   {
     "id": "bjj",
-    "name": "BRAZILIAN JIU-JITSU (BJJ)",
+    "name": "BJJ",
     "shortDescription": "Ground fighting art focusing on leverage, technique, and submission holds",
     "fullDescription": "Brazilian Jiu-Jitsu (BJJ) is a martial art that focuses on ground fighting and submission grappling. Known as 'human chess,' BJJ teaches you to use leverage, timing, and technique to overcome larger, stronger opponents. Our BJJ program emphasizes both self-defense applications and sport competition, helping you develop problem-solving skills that extend far beyond the mat.",
     "image": "/classes/jiu-jitsu.jpg",
