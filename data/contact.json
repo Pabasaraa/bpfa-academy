@@ -1,30 +1,22 @@
 {
   "address": {
-    "street": "123 Gampaha Road",
+    "street": "Gampaha Road",
     "city": "Yakkala",
     "country": "Sri Lanka",
-    "landmark": "Near Food City",
-    "full": "123 Gampaha Road, Yakkala, Sri Lanka"
+    "landmark": "Near Cargills Food City",
+    "full": "Near Cargills Food City, Gampaha Road, Yakkala, Sri Lanka"
   },
   "phone": {
     "primary": "+94 77 217 9493",
-    "display": "+94 77 217 9493"
+    "display": "+94 77 867 7163"
   },
   "email": {
     "primary": "bp.fightingacademy@gmail.com"
   },
   "hours": {
     "weekdays": {
-      "days": "Monday - Friday",
-      "time": "6:00 AM - 10:00 PM"
-    },
-    "saturday": {
-      "day": "Saturday",
-      "time": "8:00 AM - 8:00 PM"
-    },
-    "sunday": {
-      "day": "Sunday",
-      "time": "10:00 AM - 6:00 PM"
+      "days": "Monday - Sunday",
+      "time": "7:00 AM - 9:00 PM"
     }
   },
   "social": {

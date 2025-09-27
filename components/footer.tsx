@@ -142,14 +142,17 @@ export function Footer() {
           {/* Contact Info */}
           <div>
             <h3 className="font-work-sans font-bold text-lg text-foreground mb-4">
-              Contact Info
+              Contact Us
             </h3>
             <ul className="space-y-2 text-muted-foreground">
+              <li>{contactData.address.landmark}</li>
               <li>{contactData.address.street}</li>
               <li>
                 {contactData.address.city}, {contactData.address.country}
               </li>
-              <li>{contactData.phone.primary}</li>
+              <li>
+                {contactData.phone.primary} | {contactData.phone.display}
+              </li>
               <li>{contactData.email.primary}</li>
             </ul>
           </div>

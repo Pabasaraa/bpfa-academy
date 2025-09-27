@@ -1,13 +1,6 @@
 "use client";
 
-import {
-  ArrowLeft,
-  Clock,
-  Users,
-  Zap,
-  Calendar,
-  DollarSign,
-} from "lucide-react";
+import { ArrowLeft, Clock, Zap, Calendar } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 interface ClassData {
@@ -25,8 +18,7 @@ interface ClassData {
   equipment: string[];
   schedule: {
     day: string;
-    time: string;
-    instructor: string;
+    time: string[];
   }[];
   price: {
     monthly: number;
@@ -189,12 +181,11 @@ export function ClassDetail({ classData }: ClassDetailProps) {
                       </span>
                       <Calendar className="w-4 h-4 text-red-400" />
                     </div>
-                    <p className="text-gray-300 text-xs sm:text-sm mb-1">
-                      {session.time}
-                    </p>
-                    <p className="text-gray-400 text-xs">
-                      {session.instructor}
-                    </p>
+                    {session.time.map((time) => (
+                      <p className="text-gray-300 text-xs sm:text-sm mb-1">
+                        {time}
+                      </p>
+                    ))}
                   </div>
                 ))}
               </div>

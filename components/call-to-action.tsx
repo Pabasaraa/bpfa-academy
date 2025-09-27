@@ -68,7 +68,9 @@ export function CallToAction() {
             <h3 className="font-work-sans font-bold text-lg text-foreground mb-2">
               Visit Us
             </h3>
-            <p className="text-muted-foreground">{contactData.address.city}, {contactData.address.country}</p>
+            <p className="text-muted-foreground">
+              {contactData.address.city}, {contactData.address.country}
+            </p>
           </div>
         </div>
       </div>

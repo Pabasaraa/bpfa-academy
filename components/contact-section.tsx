@@ -43,6 +43,7 @@ export function ContactSection() {
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">Phone</h3>
                   <p className="text-gray-300">{contactData.phone.primary}</p>
+                  <p className="text-gray-300">{contactData.phone.display}</p>
                 </div>
               </div>
 
@@ -62,12 +63,13 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white mb-2">
-                    Training Hours
+                    Openning Hours
                   </h3>
                   <div className="text-gray-300 space-y-1">
-                    <p>{contactData.hours.weekdays.days}: {contactData.hours.weekdays.time}</p>
-                    <p>{contactData.hours.saturday.day}: {contactData.hours.saturday.time}</p>
-                    <p>{contactData.hours.sunday.day}: {contactData.hours.sunday.time}</p>
+                    <p>
+                      {contactData.hours.weekdays.days}:{" "}
+                      {contactData.hours.weekdays.time}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -79,8 +81,8 @@ export function ContactSection() {
                 Ready to Train?
               </h3>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                Join the BPFA family and unleash your inner warrior.
-                Contact us today to schedule your first training session.
+                Join the BPFA family and unleash your inner warrior. Contact us
+                today to schedule your first training session.
               </p>
               <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300">
                 START YOUR JOURNEY

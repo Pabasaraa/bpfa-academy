@@ -32,24 +32,33 @@
     ],
     "schedule": [
       {
-        "day": "Monday",
-        "time": "6:00 PM - 7:30 PM",
-        "instructor": "Sensei Rajesh Kumar"
+        "day": "Monday - Tuesday",
+        "time": ["9:00 AM - 11:00 AM", "7:00 PM - 9:00 PM"]
       },
       {
         "day": "Wednesday",
-        "time": "7:00 PM - 8:30 PM",
-        "instructor": "Sensei Rajesh Kumar"
+        "time": ["7:00 PM - 9:00 PM"]
+      },
+      {
+        "day": "Thursday",
+        "time": ["9:00 AM - 11:00 AM", "7:00 PM - 9:00 PM"]
       },
       {
         "day": "Friday",
-        "time": "6:00 PM - 7:30 PM",
-        "instructor": "Coach Mike Thompson"
+        "time": ["8:00 AM - 10:00 AM", "7:00 PM - 9:00 PM"]
       },
       {
         "day": "Saturday",
-        "time": "10:00 AM - 11:30 AM",
-        "instructor": "Sensei Rajesh Kumar"
+        "time": [
+          "7:00 AM - 9:00 AM",
+          "9:30 AM - 11:30 AM",
+          "2:00 PM - 4:00 PM (Kids)",
+          "7:00 PM - 9:00 PM"
+        ]
+      },
+      {
+        "day": "Sunday",
+        "time": ["7:00 AM - 9:00 AM", "7:00 PM - 9:00 PM"]
       }
     ],
     "price": { "monthly": 15000, "dropIn": 2000 },
@@ -90,24 +99,33 @@
     ],
     "schedule": [
       {
-        "day": "Monday",
-        "time": "8:00 PM - 9:15 PM",
-        "instructor": "Kru Somchai Jaidee"
+        "day": "Monday - Tuesday",
+        "time": ["9:00 AM - 11:00 AM", "7:00 PM - 9:00 PM"]
       },
       {
         "day": "Wednesday",
-        "time": "8:00 PM - 9:15 PM",
-        "instructor": "Kru Somchai Jaidee"
+        "time": ["7:00 PM - 9:00 PM"]
+      },
+      {
+        "day": "Thursday",
+        "time": ["9:00 AM - 11:00 AM", "7:00 PM - 9:00 PM"]
       },
       {
         "day": "Friday",
-        "time": "8:00 PM - 9:15 PM",
-        "instructor": "Coach David Kim"
+        "time": ["8:00 AM - 10:00 AM", "7:00 PM - 9:00 PM"]
+      },
+      {
+        "day": "Saturday",
+        "time": [
+          "7:00 AM - 9:00 AM",
+          "9:30 AM - 11:30 AM",
+          "2:00 PM - 4:00 PM (Kids)",
+          "7:00 PM - 9:00 PM"
+        ]
       },
       {
         "day": "Sunday",
-        "time": "2:00 PM - 3:15 PM",
-        "instructor": "Kru Somchai Jaidee"
+        "time": ["7:00 AM - 9:00 AM", "7:00 PM - 9:00 PM"]
       }
     ],
     "price": { "monthly": 13500, "dropIn": 1900 },
@@ -148,24 +166,33 @@
     ],
     "schedule": [
       {
-        "day": "Tuesday",
-        "time": "7:00 PM - 8:00 PM",
-        "instructor": "Coach Lisa Martinez"
+        "day": "Monday - Tuesday",
+        "time": ["9:00 AM - 11:00 AM", "7:00 PM - 9:00 PM"]
+      },
+      {
+        "day": "Wednesday",
+        "time": ["7:00 PM - 9:00 PM"]
       },
       {
         "day": "Thursday",
-        "time": "7:00 PM - 8:00 PM",
-        "instructor": "Coach Lisa Martinez"
+        "time": ["9:00 AM - 11:00 AM", "7:00 PM - 9:00 PM"]
+      },
+      {
+        "day": "Friday",
+        "time": ["8:00 AM - 10:00 AM", "7:00 PM - 9:00 PM"]
       },
       {
         "day": "Saturday",
-        "time": "11:00 AM - 12:00 PM",
-        "instructor": "Sensei Rajesh Kumar"
+        "time": [
+          "7:00 AM - 9:00 AM",
+          "9:30 AM - 11:30 AM",
+          "2:00 PM - 4:00 PM (Kids)",
+          "7:00 PM - 9:00 PM"
+        ]
       },
       {
         "day": "Sunday",
-        "time": "5:00 PM - 6:00 PM",
-        "instructor": "Coach Lisa Martinez"
+        "time": ["7:00 AM - 9:00 AM", "7:00 PM - 9:00 PM"]
       }
     ],
     "price": { "monthly": 11000, "dropIn": 1600 },
@@ -205,24 +232,33 @@
     ],
     "schedule": [
       {
-        "day": "Monday",
-        "time": "7:00 PM - 8:15 PM",
-        "instructor": "Coach Priya Silva"
+        "day": "Monday - Tuesday",
+        "time": ["9:00 AM - 11:00 AM", "7:00 PM - 9:00 PM"]
       },
       {
         "day": "Wednesday",
-        "time": "7:00 PM - 8:15 PM",
-        "instructor": "Coach Priya Silva"
+        "time": ["7:00 PM - 9:00 PM"]
+      },
+      {
+        "day": "Thursday",
+        "time": ["9:00 AM - 11:00 AM", "7:00 PM - 9:00 PM"]
       },
       {
         "day": "Friday",
-        "time": "7:00 PM - 8:15 PM",
-        "instructor": "Professor Carlos Santos"
+        "time": ["8:00 AM - 10:00 AM", "7:00 PM - 9:00 PM"]
+      },
+      {
+        "day": "Saturday",
+        "time": [
+          "7:00 AM - 9:00 AM",
+          "9:30 AM - 11:30 AM",
+          "2:00 PM - 4:00 PM (Kids)",
+          "7:00 PM - 9:00 PM"
+        ]
       },
       {
         "day": "Sunday",
-        "time": "10:00 AM - 11:15 AM",
-        "instructor": "Coach Priya Silva"
+        "time": ["7:00 AM - 9:00 AM", "7:00 PM - 9:00 PM"]
       }
     ],
     "price": { "monthly": 13000, "dropIn": 1900 },
