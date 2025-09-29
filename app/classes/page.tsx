@@ -1,5 +1,20 @@
 import { ClassesGrid } from "@/components/classes-grid";
 import { Footer } from "@/components/footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Martial Arts Classes & Programs",
+  description: "Explore BPFA's comprehensive martial arts classes: MMA, Boxing, Brazilian Jiu-Jitsu, Kickboxing, Karate, and more. All skill levels welcome at Sri Lanka's premier fighting academy.",
+  openGraph: {
+    title: "Martial Arts Classes at BPFA - MMA, Boxing, Jiu-Jitsu & More",
+    description: "Train in MMA, Boxing, Brazilian Jiu-Jitsu, Kickboxing, and other martial arts at Black Panther Fighting Academy. Expert instructors, all skill levels welcome.",
+    url: "https://bpfa.lk/classes",
+  },
+  twitter: {
+    title: "BPFA Martial Arts Classes - MMA, Boxing, Jiu-Jitsu",
+    description: "Train in MMA, Boxing, Brazilian Jiu-Jitsu, Kickboxing at Black Panther Fighting Academy. Expert instructors, all skill levels welcome.",
+  },
+};
 
 export default function ClassesPage() {
   return (

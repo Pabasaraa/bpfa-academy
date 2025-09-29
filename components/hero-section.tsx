@@ -39,9 +39,9 @@ export function HeroSection() {
 
           {/* Subheading */}
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-6 lg:mb-8 max-w-3xl mx-auto leading-relaxed">
-            Transform your body and mind at Sri Lanka's premier martial arts
-            academy. Master MMA, Boxing, Jiu-Jitsu, and more with world-class
-            trainers.
+            Transform your body and mind at Black Panther Fighting Academy (BPFA) - Sri Lanka's premier martial arts
+            training center. Master MMA, Boxing, Brazilian Jiu-Jitsu, Kickboxing and more with world-class
+            trainers in Colombo.
           </p>
 
           {/* CTA Buttons */}

@@ -1,5 +1,20 @@
 import { TrainersGrid } from "@/components/trainers-grid";
 import { Footer } from "@/components/footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Expert Trainers & Instructors",
+  description: "Meet BPFA's world-class martial arts trainers and instructors. Expert coaches in MMA, Boxing, Brazilian Jiu-Jitsu, Kickboxing with years of professional experience.",
+  openGraph: {
+    title: "BPFA Expert Trainers - World-Class Martial Arts Instructors",
+    description: "Meet our expert martial arts trainers at Black Panther Fighting Academy. Professional MMA, Boxing, and Jiu-Jitsu instructors with years of experience.",
+    url: "https://bpfa.lk/trainers",
+  },
+  twitter: {
+    title: "BPFA Expert Trainers - Martial Arts Instructors",
+    description: "Meet our expert martial arts trainers at Black Panther Fighting Academy. Professional MMA, Boxing, and Jiu-Jitsu instructors.",
+  },
+};
 
 export default function TrainersPage() {
   return (

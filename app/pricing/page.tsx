@@ -1,6 +1,21 @@
 import { Footer } from "@/components/footer";
 import Link from "next/link";
 import pricingData from "@/data/pricing.json";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Pricing & Membership Plans",
+  description: "Affordable martial arts training packages at BPFA. Choose from flexible monthly day packages or long-term membership plans. MMA, Boxing, Jiu-Jitsu, and Kickboxing classes available.",
+  openGraph: {
+    title: "BPFA Pricing - Martial Arts Training Packages in Sri Lanka",
+    description: "Flexible martial arts training packages at Black Panther Fighting Academy. Monthly day packages and long-term memberships available for MMA, Boxing, and more.",
+    url: "https://bpfa.lk/pricing",
+  },
+  twitter: {
+    title: "BPFA Pricing - Martial Arts Training Packages",
+    description: "Flexible martial arts training packages at Black Panther Fighting Academy. MMA, Boxing, Jiu-Jitsu, and Kickboxing classes.",
+  },
+};
 
 export default function PricingPage() {
   const { monthlyDayPackages, monthlyPackages } = pricingData;

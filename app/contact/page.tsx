@@ -1,5 +1,20 @@
 import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us - Get Started Today",
+  description: "Contact Black Panther Fighting Academy to start your martial arts journey. Visit our gym, call us, or send a message. Located in Sri Lanka's premier training facility.",
+  openGraph: {
+    title: "Contact BPFA - Start Your Martial Arts Journey Today",
+    description: "Get in touch with Black Panther Fighting Academy to begin training in MMA, Boxing, Jiu-Jitsu, and more. Visit our gym or contact us today.",
+    url: "https://bpfa.lk/contact",
+  },
+  twitter: {
+    title: "Contact BPFA - Start Your Martial Arts Journey",
+    description: "Get in touch with Black Panther Fighting Academy to begin training in MMA, Boxing, Jiu-Jitsu, and more.",
+  },
+};
 
 export default function ContactPage() {
   return (

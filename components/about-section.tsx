@@ -35,7 +35,7 @@ export function AboutSection() {
             <span className="block text-primary">FORGED</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            At BPFA, we don't just teach martial arts – we forge warriors. Our
+            At Black Panther Fighting Academy (BPFA), Sri Lanka's premier martial arts academy, we don't just teach martial arts – we forge warriors. Our
             philosophy combines ancient martial arts wisdom with modern training
             methodologies to create complete fighters who excel both in combat
             and in life.
@@ -73,8 +73,8 @@ export function AboutSection() {
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
                 Founded with the vision of bringing world-class martial arts
-                training to Sri Lanka, BPFA has become the premier destination
-                for serious fighters and fitness enthusiasts alike.
+                training to Sri Lanka, Black Panther Fighting Academy (BPFA) has become the premier destination
+                for serious fighters, MMA enthusiasts, and fitness seekers across Colombo and Sri Lanka.
               </p>
               <p>
                 Our state-of-the-art facility houses multiple training areas,
