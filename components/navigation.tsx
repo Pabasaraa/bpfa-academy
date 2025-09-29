@@ -67,12 +67,12 @@ export function Navigation() {
             >
               Trainers
             </Link>
-            <Link
+            {/* <Link
               href="/gallery"
               className="text-foreground hover:text-primary transition-colors"
             >
               Gallery
-            </Link>
+            </Link> */}
             <Link
               href="/contact"
               className="text-foreground hover:text-primary transition-colors"
