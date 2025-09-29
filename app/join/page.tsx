@@ -1,6 +1,7 @@
 "use client";
 
 import { Footer } from "@/components/footer";
+import contactData from "@/data/contact.json";
 
 export default function JoinPage() {
   const steps = [
@@ -184,17 +185,17 @@ export default function JoinPage() {
             <p className="text-sm">
               Have questions? Call us at{" "}
               <a
-                href="tel:+94777123456"
+                href={`tel: ${contactData.phone.primary.trim()}`}
                 className="font-bold hover:text-white transition-colors"
               >
-                +94 77 712 3456
+                {contactData.phone.primary}
               </a>{" "}
               or email{" "}
               <a
-                href="mailto:info@blackpantherma.lk"
+                href={`mailto: ${contactData.email.primary}`}
                 className="font-bold hover:text-white transition-colors"
               >
-                info@blackpantherma.lk
+                {contactData.email.primary}
               </a>
             </p>
           </div>
