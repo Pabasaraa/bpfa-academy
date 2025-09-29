@@ -101,10 +101,6 @@ export function ClassDetail({ classData }: ClassDetailProps) {
                   </div>
                 </div>
               </div>
-
-              <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 sm:py-4 sm:px-12 rounded-lg text-base sm:text-lg transition-colors duration-300 w-full sm:w-auto">
-                JOIN THIS CLASS
-              </button>
             </div>
           </div>
         </div>
