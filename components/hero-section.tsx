@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export function HeroSection() {
   return (
@@ -39,25 +40,22 @@ export function HeroSection() {
 
           {/* Subheading */}
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-6 lg:mb-8 max-w-3xl mx-auto leading-relaxed">
-            Transform your body and mind at Black Panther Fighting Academy (BPFA) - Sri Lanka's premier martial arts
-            training center. Master MMA, Boxing, Brazilian Jiu-Jitsu, Kickboxing and more with world-class
-            trainers in Colombo.
+            Transform your body and mind at Black Panther Fighting Academy
+            (BPFA) - Sri Lanka's premier martial arts training center. Master
+            MMA, Boxing, Brazilian Jiu-Jitsu, Kickboxing and more with
+            professional trainers.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button
-              onClick={() =>
-                window.open(
-                  "https://docs.google.com/forms/d/e/1FAIpQLSexVaWKUUHBRhts39JRrbrtqNw3BiICfTMa4dI_pKzKFVhjBw/viewform",
-                  "_blank"
-                )
-              }
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 animate-scale-in"
-            >
-              START YOUR JOURNEY
-            </Button>
+            <Link href={"/join"}>
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 animate-scale-in"
+              >
+                START YOUR JOURNEY
+              </Button>
+            </Link>
           </div>
 
           {/* Stats */}
@@ -80,7 +78,7 @@ export function HeroSection() {
             </div>
             <div className="text-center">
               <div className="text-2xl sm:text-3xl md:text-4xl font-work-sans font-bold text-primary">
-                8
+                5
               </div>
               <div className="text-sm sm:text-base text-muted-foreground font-medium">
                 Martial Arts

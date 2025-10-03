@@ -16,13 +16,14 @@ const workSans = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://bpfa.lk'),
+  metadataBase: new URL("https://bpfa.lk"),
   title: {
-    default: "BPFA | Black Panther Fighting Academy - Premier Martial Arts Training in Sri Lanka",
+    default:
+      "BPFA | Black Panther Fighting Academy - Premier Martial Arts Training in Sri Lanka",
     template: "%s | BPFA - Black Panther Fighting Academy",
   },
   description:
-    "Black Panther Fighting Academy (BPFA) - Sri Lanka's premier martial arts training center. Master MMA, Boxing, Brazilian Jiu-Jitsu, Kickboxing, and more with world-class trainers. Join BPFA today!",
+    "Black Panther Fighting Academy (BPFA) - Sri Lanka's premier martial arts training center. Master MMA, Boxing, Brazilian Jiu-Jitsu, Kickboxing, and more with professional trainers. Join BPFA today!",
   keywords: [
     "BPFA",
     "Black Panther Fighting Academy",
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     "kickboxing Sri Lanka",
     "martial arts academy",
     "fighting training",
-    "self defense Sri Lanka"
+    "self defense Sri Lanka",
   ],
   authors: [{ name: "BPFA Team" }],
   creator: "Black Panther Fighting Academy",
@@ -49,8 +50,10 @@ export const metadata: Metadata = {
     apple: "/images/logo.png",
   },
   openGraph: {
-    title: "BPFA | Black Panther Fighting Academy - Premier Martial Arts Training",
-    description: "Transform your body and mind at Sri Lanka's premier martial arts academy. Master MMA, Boxing, Jiu-Jitsu, and more with world-class trainers.",
+    title:
+      "BPFA | Black Panther Fighting Academy - Premier Martial Arts Training",
+    description:
+      "Transform your body and mind at Sri Lanka's premier martial arts academy. Master MMA, Boxing, Jiu-Jitsu, and more with professional trainers.",
     url: "https://bpfa.lk",
     siteName: "Black Panther Fighting Academy",
     images: [
@@ -66,8 +69,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "BPFA | Black Panther Fighting Academy - Premier Martial Arts Training",
-    description: "Transform your body and mind at Sri Lanka's premier martial arts academy. Master MMA, Boxing, Jiu-Jitsu, and more.",
+    title:
+      "BPFA | Black Panther Fighting Academy - Premier Martial Arts Training",
+    description:
+      "Transform your body and mind at Sri Lanka's premier martial arts academy. Master MMA, Boxing, Jiu-Jitsu, and more.",
     images: ["/images/logo.png"],
   },
   robots: {

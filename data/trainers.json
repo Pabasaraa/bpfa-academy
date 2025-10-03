@@ -48,26 +48,6 @@
     "styles": ["MMA", "MUAY THAI", "KICKBOXING"]
   },
   {
-    "id": "isuru-prabhathiya",
-    "head": false,
-    "name": "ISURU PRABHATHIYA",
-    "specialty": "BJJ & MMA",
-    "experience": "5+ Years",
-    "achievements": [
-      "2018 nationals Muay Thai champion",
-      "CFC 2022 Middle Weight Winner"
-    ],
-    "image": "/coaches/coach-isuru.jpeg",
-    "bio": "Coach Isuru Prabhathiya broke barriers as the first female BJJ black belt in Sri Lanka. Her technical precision and innovative teaching methods have revolutionized ground fighting in the region.",
-    "certifications": [
-      "BJJ Black Belt (3rd Degree)",
-      "Women's Self-Defense Instructor",
-      "Youth Martial Arts Specialist"
-    ],
-    "philosophy": "Technique conquers strength, timing beats speed, and leverage defeats size.",
-    "styles": ["MMA", "BJJ"]
-  },
-  {
     "id": "sahan-thisaranga",
     "head": false,
     "name": "SAHAN THISARANGA",
@@ -88,15 +68,32 @@
     "styles": ["MUAY THAI", "KICKBOXING"]
   },
   {
-    "id": "devinda-kodisinghe",
+    "id": "isuru-prabhathiya",
     "head": false,
-    "name": "DEVINDA KODISINGHE",
-    "specialty": "MUAY THAI & KICKBOXING",
+    "name": "ISURU PRABHATHIYA",
+    "specialty": "BJJ & MMA",
     "experience": "5+ Years",
     "achievements": [
       "2018 nationals Muay Thai champion",
       "CFC 2022 Middle Weight Winner"
     ],
+    "image": "/coaches/coach-isuru.jpeg",
+    "bio": "Coach Isuru Prabhathiya broke barriers as the first female BJJ black belt in Sri Lanka. Her technical precision and innovative teaching methods have revolutionized ground fighting in the region.",
+    "certifications": [
+      "BJJ Black Belt (3rd Degree)",
+      "Women's Self-Defense Instructor",
+      "Youth Martial Arts Specialist"
+    ],
+    "philosophy": "Technique conquers strength, timing beats speed, and leverage defeats size.",
+    "styles": ["MMA", "BJJ"]
+  },
+  {
+    "id": "devinda-kodisinghe",
+    "head": false,
+    "name": "DEVINDA KODISINGHE",
+    "specialty": "MUAY THAI & KICKBOXING",
+    "experience": "3+ Years",
+    "achievements": ["2018 nationals Muay Thai champion"],
     "image": "/coaches/coach-devinda.jpg",
     "bio": "Coach Devinda Kodisinghe broke barriers as the first female BJJ black belt in Sri Lanka. Her technical precision and innovative teaching methods have revolutionized ground fighting in the region.",
     "certifications": [
