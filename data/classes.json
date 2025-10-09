@@ -58,7 +58,7 @@
       },
       {
         "day": "Sunday",
-        "time": ["7:00 AM - 9:00 AM", "7:00 PM - 9:00 PM"]
+        "time": ["9:00 AM - 11:00 AM", "7:00 PM - 9:00 PM"]
       }
     ],
     "price": { "monthly": 15000, "dropIn": 2000 },
@@ -125,7 +125,7 @@
       },
       {
         "day": "Sunday",
-        "time": ["7:00 AM - 9:00 AM", "7:00 PM - 9:00 PM"]
+        "time": ["9:00 AM - 11:00 AM", "7:00 PM - 9:00 PM"]
       }
     ],
     "price": { "monthly": 13500, "dropIn": 1900 },
@@ -192,7 +192,7 @@
       },
       {
         "day": "Sunday",
-        "time": ["7:00 AM - 9:00 AM", "7:00 PM - 9:00 PM"]
+        "time": ["9:00 AM - 11:00 AM", "7:00 PM - 9:00 PM"]
       }
     ],
     "price": { "monthly": 11000, "dropIn": 1600 },
@@ -258,7 +258,7 @@
       },
       {
         "day": "Sunday",
-        "time": ["7:00 AM - 9:00 AM", "7:00 PM - 9:00 PM"]
+        "time": ["9:00 AM - 11:00 AM", "7:00 PM - 9:00 PM"]
       }
     ],
     "price": { "monthly": 13000, "dropIn": 1900 },
